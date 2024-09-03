@@ -14,3 +14,6 @@
 
 ## Purdue Model for ICS Security
 - https://www.zscaler.com/resources/security-terms-glossary/what-is-purdue-model-ics-security
+
+## All default passwords for SCADA
+- https://hackmd.io/@tuBp9oxkSra7nw4TNItvUg/BkVIccr-j
