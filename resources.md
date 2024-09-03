@@ -9,5 +9,5 @@
 - https://github.com/mitre/caldera-ot: this is for plugins built for the MITRE ICS Matrix.
 - https://github.com/ukrainecyber/CTO-mentorship-Module_5_Fundamentals-of-Operational-Technology/blob/main/05.%20Module_5_Whitepaper3-Comprehensive%20Guide%20to%20Operational%20Technology%20Cybersecurity.pdf: stuff on OT cyber
 
-## Python Implitations
+## Python Implementationns
 - https://github.com/GeoSCADA/Utilities-and-Examples/blob/main/PythonSamples/README.md
