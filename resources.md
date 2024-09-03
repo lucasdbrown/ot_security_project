@@ -11,3 +11,6 @@
 
 ## Python Implementationns
 - https://github.com/GeoSCADA/Utilities-and-Examples/blob/main/PythonSamples/README.md
+
+## Purdue Model for ICS Security
+- https://www.zscaler.com/resources/security-terms-glossary/what-is-purdue-model-ics-security
