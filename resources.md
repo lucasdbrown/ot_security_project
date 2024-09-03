@@ -1,6 +1,6 @@
 # Resources on OT
 
-## ## Frameworks and Matrices
+## Frameworks and Matrices
 - https://attack.mitre.org/matrices/ics/: MITRE ATT&CK® Matrix for ICS
 - https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-82r3.pdf: NIST SP 800-82
 - https://www.isa.org/products/ansi-isa-62443-4-2-2018-security-for-industrial-au: IEC 62443
