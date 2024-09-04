@@ -8,6 +8,7 @@ just look up `cve list scada attacks`
 - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2453
 ## authorized user privilage escalation
 - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-22016
+- https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-22722
 ## remote code exec
 - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-21852
 
