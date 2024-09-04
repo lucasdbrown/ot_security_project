@@ -14,3 +14,6 @@
 
 ## Modern SCADA Network Topology
 - https://www.researchgate.net/figure/Typical-modern-SCADA-topology_fig1_221632254
+
+## software and visual representation of SCADA topology and HMI's
+- https://inductiveautomation.com/scada-software/
