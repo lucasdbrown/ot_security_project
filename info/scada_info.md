@@ -32,6 +32,8 @@ SCADASim: A SCADA simulator that can be installed using Python
 ## Protocols used by SCADA systems
 - Modbus: 80-90% of plant devices (inverters, trackers, etc.) "speak" Modbus protocol
 - DNP3: newer protocol that is primarily used to communicate between different substation devices in the SCADA system.
+- RP-570: used between RTU and SCADA
+- PROFIBUS: a serial communication protocol that enables the reliable exchange of data in industrial automation systems
 
 ## How to Hack
 - 
