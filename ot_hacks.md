@@ -5,5 +5,5 @@ just look up `cve list scada attacks`
 ## Cross-site Scripting
 - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-7901
 
-## Operating System
+## Operating System 
 SCADA can still be running on WinXP, meaning the OS is a major vulnerability

@@ -6,7 +6,7 @@
 SCADASim: A SCADA simulator that can be installed using Python
 
 ## What is connected to a SCADA???
-- Remote Terminal Units (RTUs)
+- Remote Terminal Units (RTUs): RTUs primarily act as the intermediaries between the field devices (like sensors and actuators) and the central SCADA system
 - Programmable Logic Controllers (PLCs): PLCs communicate with the SCADA system to provide data on process variables (e.g., temperature, pressure) and to receive commands for controlling equipment.
 - Human-Machine Interfaces (HMIs): HMIs are directly connected to the SCADA system, displaying process data and enabling operators to issue commands to field devices via the SCADA network.
 - Sensors and Actuators: Sensors and actuators are connected to RTUs or PLCs, which then relay data to and receive commands from the SCADA system.
