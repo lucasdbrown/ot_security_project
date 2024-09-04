@@ -17,3 +17,6 @@
 
 ## software and visual representation of SCADA topology and HMI's
 - https://inductiveautomation.com/scada-software/
+
+## SCADA Networking Protocols
+- https://blog.norcalcontrols.net/scada-networking-protocols-and-basics
