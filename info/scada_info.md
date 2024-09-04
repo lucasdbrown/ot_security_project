@@ -2,6 +2,21 @@
 
 - a SCADA collects data from sensors and based on its firmware makes decisions based on that.
 
+## SCADA described in NIST SP 800-82
+"Additionally, critical infrastructures are often referred to as a “system of systems” because of the
+interdependencies that exist between various industrial sectors and the interconnections between
+business partners [Peerenboom][Rinaldi]. An incident in one infrastructure can directly and
+indirectly affect other infrastructures through cascading and escalating failures. 
+
+For example, both the electrical power transmission and distribution grid industries use
+geographically distributed SCADA control technology to operate highly interconnected and
+dynamic systems that consist of thousands of public and private utilities and rural cooperatives
+for supplying electricity to end users. Some SCADA systems monitor and control electricity
+distribution by collecting data from and issuing commands to geographically remote field control
+stations from a centralized location. SCADA systems are also used to monitor and control water,
+oil, and natural gas distribution, including pipelines, ships, trucks, rail systems, and wastewater
+collection systems."
+
 ## Simulators
 SCADASim: A SCADA simulator that can be installed using Python
 
