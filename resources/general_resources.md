@@ -9,20 +9,5 @@
 - https://github.com/mitre/caldera-ot: this is for plugins built for the MITRE ICS Matrix.
 - https://github.com/ukrainecyber/CTO-mentorship-Module_5_Fundamentals-of-Operational-Technology/blob/main/05.%20Module_5_Whitepaper3-Comprehensive%20Guide%20to%20Operational%20Technology%20Cybersecurity.pdf: stuff on OT cyber
 
-## Python Implementationns
-- https://github.com/GeoSCADA/Utilities-and-Examples/blob/main/PythonSamples/README.md
-
 ## Purdue Model for ICS Security
 - https://www.zscaler.com/resources/security-terms-glossary/what-is-purdue-model-ics-security
-
-## All default passwords for SCADA
-- https://hackmd.io/@tuBp9oxkSra7nw4TNItvUg/BkVIccr-j
-
-## heat station scada HMI / GUI 
-- https://www.dosupply.com/tech/2019/02/04/explaining-hmi-scada-and-plcs-what-they-do-and-how-they-work-together/
-
-## SCADA Communication Topology
-- https://www.researchgate.net/figure/SCADA-Communication-Topologies_fig2_266879345
-
-## Modern SCADA Network Topology
-- https://www.researchgate.net/figure/Typical-modern-SCADA-topology_fig1_221632254
