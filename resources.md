@@ -17,3 +17,6 @@
 
 ## All default passwords for SCADA
 - https://hackmd.io/@tuBp9oxkSra7nw4TNItvUg/BkVIccr-j
+
+## heat station scada HMI / GUI 
+- https://www.dosupply.com/tech/2019/02/04/explaining-hmi-scada-and-plcs-what-they-do-and-how-they-work-together/
