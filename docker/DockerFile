@@ -1,0 +1,29 @@
+# Use an official ASP.NET runtime as a parent image
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
+
+# Set environment variables for Rapid SCADA
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Install necessary dependencies for Rapid SCADA
+RUN apt-get update && apt-get install -y \
+    wget \
+    unzip \
+    tzdata \
+    && rm -rf /var/lib/apt/lists/*
+
+# Download and install Rapid SCADA
+RUN wget -q https://github.com/RapidScada/scada/releases/latest/download/RapidSCADA.zip -O /tmp/RapidSCADA.zip \
+    && unzip /tmp/RapidSCADA.zip -d /opt/rapidscada \
+    && rm /tmp/RapidSCADA.zip
+
+# Expose necessary ports for SCADA Web interface
+EXPOSE 80 10000
+
+# Set the working directory
+WORKDIR /opt/rapidscada
+
+# Make sure the entry script has Unix-style line endings (LF)
+RUN sed -i 's/\r$//' /opt/rapidscada/start.sh
+
+# Define entry point
+CMD ["bash", "-c", "dotnet ScadaServer.dll"]
