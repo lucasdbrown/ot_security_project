@@ -29,6 +29,18 @@ SCADASim: A SCADA simulator that can be installed using Python
 - Intelligent Electronic Devices (IEDs): IEDs communicate with the SCADA system to report electrical system status, fault conditions, and to execute automated protective actions.
 - Alarm Systems: Alarms are generated based on data from sensors, RTUs, and PLCs, and are managed and displayed through the SCADA system.
 
+# SCADA before implementation
+- Clearly define and understand what you want to monitor
+- Determine the data you currently collect and how
+- Start small: pick one set of data and one location to do a proof of concept (POC)
+- Define scalable architecture
+- Add gateways to connect current data collection points
+- Create new data collection points if desired
+- Centralize your data to your intended monitoring location
+- Map data in your SCADA software of choice
+- Add visualizations of data and controls
+- Define automations and rules
+
 ## Protocols used by SCADA systems
 - Modbus: 80-90% of plant devices (inverters, trackers, etc.) "speak" Modbus protocol
 - DNP3: newer protocol that is primarily used to communicate between different substation devices in the SCADA system.
