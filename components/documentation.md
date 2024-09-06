@@ -1,4 +1,4 @@
-# Building an HMI with Flask in Python
+# Building Components with Flask in Python
 
 ## Installing Flask
 `pip install Flask`
