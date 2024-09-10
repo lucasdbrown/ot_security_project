@@ -1,12 +1,19 @@
-[Full LTS Wiki](https://github.com/SCADA-LTS/Scada-LTS/wiki)
-[Setting It up Instructions](https://github.com/SCADA-LTS/Scada-LTS/wiki/Scada-LTS-on-Docker-tutorial)
-
 ## Instructions
-```bash
-docker pull scadalts/scadalts:latest
-docker run -p 81:8080 scadalts/scadalts:latest
-```
-Then run `docker ps` to get the name/id of the container. `docker exec -it <container_name> bash ` to connect to the bash shell.
+- [Full LTS Wiki](https://github.com/SCADA-LTS/Scada-LTS/wiki)
+- [Setting It up Instructions](https://github.com/SCADA-LTS/Scada-LTS/wiki/Scada-LTS-docker-compose-tutorial)
 
-go to `http://localhost:81/ScadaBR/` to view the webpage (404 right now).
+## Setup
+- In the directory with the `docker-compose.yml`
+- `docker-compose up`
 
+#### To connnect to the terminal
+- `docker ps` for the name or id of the scadalts container
+- `docker exec -it <container_name/id> /bin/bash` to connect to shell
+
+#### To view the different webpages
+- [Scada](http://localhost:8080/Scada-LTS/)
+  - username: admin
+  - password: admin
+- [HiveMQ](http://localhost:8081/)
+  - username: admin
+  - password: hivemq
