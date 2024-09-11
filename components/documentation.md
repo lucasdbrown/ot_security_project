@@ -13,14 +13,14 @@
 ## Getting the temperature
 
 ### Retrieving data from `curl`
-`curl http://127.0.0.1:5000/temperature`
+`curl http://127.0.0.1:5002/temperature`
 
 ## Controlling the actuator with HMI
 ### Turning it on
-`curl -X POST -H "Content-Type: application/json" -d '{"state": "ON"}' http://127.0.0.1:5000/hmi/actuator`
+`curl -X POST -H "Content-Type: application/json" -d '{"state": "ON"}' http://127.0.0.1:5000/actuator`
 
 ### Turning it off
-`curl -X POST -H "Content-Type: application/json" -d '{"state": "OFF"}' http://127.0.0.1:5000/hmi/actuator`
+`curl -X POST -H "Content-Type: application/json" -d '{"state": "OFF"}' http://127.0.0.1:5000/actuator`
 
 
 

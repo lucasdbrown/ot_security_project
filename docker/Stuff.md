@@ -4,6 +4,7 @@
 - I still need to add .gitignore for docker here so don't commit all those files that get created when you run it
 
 ## Setup
+- Install docker desktop (if not already)
 - In the directory with the `docker-compose.yml`
 - `docker-compose up`
 
