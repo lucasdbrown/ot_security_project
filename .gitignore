@@ -1,2 +1,8 @@
 # Mac .DS_Store
 .DS_Store
+
+# Docker Log Folders
+docker/db_conf/
+docker/db_data/
+docker/tomcat_log/
+docker/docker/
