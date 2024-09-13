@@ -46,3 +46,14 @@ services:
             - "8081:8080"
             - "1883:1883"
         expose: [ "8081", "1883" ]
+    plc:
+        build:
+            context: ./components/plc  
+        ports:
+            - "502:502"  # Modbus TCP port
+        depends_on:
+            - sensor
+            - actuator
+        volumes:
+            - ./components/plc:/app:rw
+        command: python /app/plc.py

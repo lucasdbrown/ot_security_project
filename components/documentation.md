@@ -8,6 +8,9 @@
 ## Install Flask requests
 `pip install flask requests`
 
+## Install pymodbus (inside components folder)
+`pip install pymodbus`
+
 ## Instructions to start curling
 - will have 4 terminals
 - cd into the individual components and run the following `python <component>.py`
