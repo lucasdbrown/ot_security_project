@@ -42,5 +42,6 @@
 ### Turning it off
 `curl -X POST -H "Content-Type: application/json" -d '{"state": "OFF"}' http://127.0.0.1:5000/actuator`
 
-
+## Actuator test
+`curl http://127.0.0.1:5001/actuator`
 
