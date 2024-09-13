@@ -18,7 +18,7 @@ def update_sensor_data(context, unit=1):
     while True:
         try:
             # Fetch temperature data from sensor
-            response = requests.get("http://sensor:5002/temperature")
+            response = requests.get("http://sensor:5002/temperature")# should change to local host
             if response.status_code == 200:
                 sensor_data = response.json()
                 temperature = int(sensor_data['temperature'])  # Assuming integer values for Modbus
