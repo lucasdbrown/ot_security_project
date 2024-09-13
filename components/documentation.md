@@ -8,12 +8,32 @@
 ## Install Flask requests
 `pip install flask requests`
 
+## Instructions to start curling
+- will have 4 terminals
+- cd into the individual components and run the following `python <component>.py`
+- then you can curl in the one non-component terminal by cding into components
+
 # Using the components
 
 ## Getting the temperature
 
 ### Retrieving data from `curl`
 `curl http://127.0.0.1:5002/temperature`
+
+## Temperature history
+`curl http://127.0.0.1:5002/temperature/history`
+
+## Change the unit of temperature
+`curl -X POST -H "Content-Type: application/json" -d '{"unit": "Fahrenheit"}' http://127.0.0.1:5002/temperature/unit`
+
+## Enabling heating
+`curl -X POST -H "Content-Type: application/json" -d '{"state": "ON"}' http://127.0.0.1:5002/temperature/heating`
+
+## Enabling cooling
+`curl -X POST -H "Content-Type: application/json" -d '{"state": "ON"}' http://127.0.0.1:5002/temperature/cooling`
+
+## See the uptime of the sensor
+`curl http://127.0.0.1:5002/sensor/uptime`
 
 ## Controlling the actuator with HMI
 ### Turning it on
