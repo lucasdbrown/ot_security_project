@@ -2,4 +2,5 @@
 This project focuses on the simulation of a cyber attack on an industrial water plant. 
 
 ## Diagram of the components in our simulated water plant network
-<img src="[initial_diagram](https://github.com/lucasdbrown/ot_security_project/planning/environment/initial_diagram.png)" width="500" height="500">
+
+![initial_diagram](https://github.com/user-attachments/assets/a7b53266-32c2-4a01-952d-653ddf027b7a)
