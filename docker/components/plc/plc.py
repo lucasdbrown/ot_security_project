@@ -18,7 +18,7 @@ def update_sensor_data(context, unit=1):
     while True:
         try:
             # Fetch temperature data from sensor
-            response = requests.get("http://sensor:5002/temperature")# should change to local host
+            response = requests.get("http://127.0.0.1:5002/temperature")
             if response.status_code == 200:
                 sensor_data = response.json()
                 temperature = int(sensor_data['temperature'])  # Assuming integer values for Modbus
@@ -38,7 +38,7 @@ def control_actuator(context, unit=1):
             actuator_state = context[unit].getValues(3, 1)[0]
             # Send the state to actuator service
             state = "ON" if actuator_state == 1 else "OFF"
-            response = requests.post("http://actuator:5001/actuator", json={"state": state})
+            response = requests.post("http://127.0.0.1:5001/actuator", json={"state": state})
             if response.status_code == 200:
                 log.info(f"Actuator set to: {state}")
             time.sleep(5)

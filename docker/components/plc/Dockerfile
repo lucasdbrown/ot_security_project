@@ -1,4 +1,4 @@
-# Use Python base image
+# plc Dockerfile
 FROM python:3.9-slim
 
 # Set working directory
@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # Install the required Python packages
-RUN pip install --no-cache-dir pymodbus requests
+RUN pip install --no-cache-dir pymodbus==2.5.3 requests
 
 # Expose the Modbus TCP port
 EXPOSE 502

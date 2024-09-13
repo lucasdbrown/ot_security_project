@@ -1,17 +1,21 @@
-# PLC Dockerfile
+# Components Dockerfile
 FROM python
 
 WORKDIR /usr/src/app
 
 RUN apt-get update
 
-RUN pip install pymodbus
+RUN pip install --no-cache-dir pymodbus==2.5.3 requests
+RUN pip install requests
+RUN pip install flask
 
-# Copy the shell script into the container
-COPY start.sh /start.sh
+
+
+# Copy the scripts to container
+COPY . .
 
 # Make the shell script executable
-RUN chmod +x /start.sh
+RUN chmod +x components_startup.sh
 
 # Use the shell script as the entry point
-CMD ["/actuator_startup.sh"]
+CMD ["./components_startup.sh"]
