@@ -10,4 +10,3 @@ sleep 5
 
 # Run the PLC script
 python plc/plc.py
-echo "PLC started"
