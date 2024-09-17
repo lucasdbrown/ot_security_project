@@ -91,8 +91,12 @@ def switch_unit():
 @app.route('/temperature/heating', methods=['POST'])
 def control_heating():
     global heating
+    print(1)
+    print(request.json)
     data = request.json
+    print(2)
     if data and "state" in data:
+        print(3)
         heating = data["state"] == "ON"
         return jsonify({"message": "Heating " + ("enabled" if heating else "disabled")}), 200
     return jsonify({"error": "Invalid request"}), 400

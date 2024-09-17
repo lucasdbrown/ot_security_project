@@ -32,8 +32,14 @@
 ## Enabling heating
 `curl -X POST -H "Content-Type: application/json" -d '{"state": "ON"}' http://127.0.0.1:5002/temperature/heating`
 
+## Disabling heating
+`curl -X POST http://127.0.0.1:5002/temperature/heating -H "Content-Type: application/json" -d '{"state": "OFF"}'`
+
 ## Enabling cooling
 `curl -X POST -H "Content-Type: application/json" -d '{"state": "ON"}' http://127.0.0.1:5002/temperature/cooling`
+
+## Disabling cooling
+`curl -X POST http://127.0.0.1:5002/temperature/cooling -H "Content-Type: application/json" -d '{"state": "OFF"}'`
 
 ## See the uptime of the sensor
 `curl http://127.0.0.1:5002/sensor/uptime`
@@ -41,9 +47,11 @@
 ## Controlling the actuator with HMI
 ### Turning it on
 `curl -X POST -H "Content-Type: application/json" -d '{"state": "ON"}' http://127.0.0.1:5000/actuator`
+`curl -X POST http://127.0.0.1:5001/actuator -H "Content-Type: application/json" -d '{"state": "ON"}'`
 
 ### Turning it off
 `curl -X POST -H "Content-Type: application/json" -d '{"state": "OFF"}' http://127.0.0.1:5000/actuator`
+`curl -X POST http://127.0.0.1:5001/actuator -H "Content-Type: application/json" -d '{"state": "OFF"}'`
 
 ## Actuator test
 `curl http://127.0.0.1:5001/actuator`
