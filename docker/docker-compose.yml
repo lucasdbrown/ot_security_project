@@ -7,13 +7,13 @@ services:
         container_name: mysql
         image: mysql/mysql-server:8.0.32
         ports:
-            - "3306:3306"
+            - "3307:3306"
         environment: 
             - MYSQL_ROOT_PASSWORD=root
             - MYSQL_USER=root
             - MYSQL_PASSWORD=root
             - MYSQL_DATABASE=scadalts
-        expose: ["3306"]
+        expose: ["3307"]
         volumes:
             - ./db_data:/var/lib/mysql:rw
             - ./db_conf:/etc/mysql:ro
