@@ -1,0 +1,98 @@
+INFO  2024-10-11T18:35:18,592 (?.:) - Job execution threads will use class loader of thread: main 
+INFO  2024-10-11T18:35:18,600 (?.:) - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl 
+INFO  2024-10-11T18:35:18,600 (?.:) - Quartz Scheduler v.1.6.3 created. 
+INFO  2024-10-11T18:35:18,601 (?.:) - RAMJobStore initialized. 
+INFO  2024-10-11T18:35:18,601 (?.:) - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties' 
+INFO  2024-10-11T18:35:18,601 (?.:) - Quartz scheduler version: 1.6.3 
+INFO  2024-10-11T18:35:18,605 (?.:) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started. 
+INFO  2024-10-11T18:35:18,618 (?.:) - Initializing pooled connection manager 
+INFO  2024-10-11T18:35:18,618 (?.:) - Looking for Datasource: java:comp/env/jdbc/scadalts 
+INFO  2024-10-11T18:35:18,622 (?.:) - DataSource meta: MySQL 8.0.32 
+INFO  2024-10-11T18:35:19,865 (?.:) - Scada-LTS context starting at: 1728671719864 
+INFO  2024-10-11T18:35:19,872 (?.:) - 
+**************************************************
+*             Welcome to Scada-LTS!              *
+**************************************************
+* Version: v2.7.8
+* Build: 9871735523
+* Powered by: Scada-LTS team
+ 
+ERROR 2024-10-11T18:35:19,931 (?.:) - PreparedStatementCallback; bad SQL grammar [select settingValue from systemSettings where settingName=? ]; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'scadalts.systemsettings' doesn't exist 
+INFO  2024-10-11T18:35:20,114 (?.:) - schemaExist:false 
+INFO  2024-10-11T18:35:20,115 (?.:) - BaseLineNotExist:true 
+WARN  2024-10-11T18:35:20,120 (?.:) - Use of dots (.) as path separators will be deprecated in Flyway 7. Path: org.scada_lts.dao.migration.mysql 
+INFO  2024-10-11T18:35:20,122 (?.:) - Flyway Community Edition 6.5.5 by Redgate 
+INFO  2024-10-11T18:35:20,176 (?.:) - Database: jdbc:mysql://database:3306/scadalts (MySQL 8.0) 
+INFO  2024-10-11T18:35:20,203 (?.:) - Successfully validated 30 migrations (execution time 00:00.006s) 
+INFO  2024-10-11T18:35:20,211 (?.:) - Creating Schema History table `scadalts`.`schema_version` ... 
+INFO  2024-10-11T18:35:20,234 (?.:) - Current version of schema `scadalts`: << Empty Schema >> 
+INFO  2024-10-11T18:35:20,235 (?.:) - Migrating schema `scadalts` to version 1 - BaseVersion 
+INFO  2024-10-11T18:35:20,944 (?.:) - Migrating schema `scadalts` to version 1.1 - ViewsHierarchy 
+INFO  2024-10-11T18:35:20,969 (?.:) - Migrating schema `scadalts` to version 1.2 - SetViewSizeProperties 
+INFO  2024-10-11T18:35:20,979 (?.:) - Migrating schema `scadalts` to version 1.3 - SetXidPointHierarchy 
+INFO  2024-10-11T18:35:20,995 (?.:) - Migrating schema `scadalts` to version 2.0 - CMP history 
+INFO  2024-10-11T18:35:21,006 (?.:) - Migrating schema `scadalts` to version 2.3 - FaultsAndAlarms 
+WARN  2024-10-11T18:35:21,012 (?.:) - org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [ALTER TABLE dataPoints DROP COLUMN pointName;]; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'pointName'; check that column/key exists 
+WARN  2024-10-11T18:35:21,014 (?.:) - org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [ALTER TABLE dataPoints DROP COLUMN plcAlarmLevel;]; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'plcAlarmLevel'; check that column/key exists 
+INFO  2024-10-11T18:35:21,046 (?.:) - Migrating schema `scadalts` to version 2.4 
+INFO  2024-10-11T18:35:21,056 (?.:) - Migrating schema `scadalts` to version 2.5 - ScheduledExecuteInactiveEvent 
+INFO  2024-10-11T18:35:21,091 (?.:) - Migrating schema `scadalts` to version 2.6 
+INFO  2024-10-11T18:35:21,104 (?.:) - Migrating schema `scadalts` to version 2.6.5.0 - ZIndexForViewComponent 
+INFO  2024-10-11T18:35:21,109 (?.:) - Migrating schema `scadalts` to version 2.7.0.1 - UserParameters 
+INFO  2024-10-11T18:35:21,125 (?.:) - Migrating schema `scadalts` to version 2.7.0.2 - FixViewPermissions 
+INFO  2024-10-11T18:35:21,134 (?.:) - Migrating schema `scadalts` to version 2.7.0.3 - AnonymousUser 
+INFO  2024-10-11T18:35:21,139 (?.:) - Migrating schema `scadalts` to version 2.7.0.4 - ExtendedDelayForMetaDatapoints 
+INFO  2024-10-11T18:35:21,144 (?.:) - Migrating schema `scadalts` to version 2.7.0.4.1 - CorrectProcedurePrcAlarmsNotify 
+INFO  2024-10-11T18:35:21,150 (?.:) - Migrating schema `scadalts` to version 2.7.0.4.2 - MultiChangeHistory 
+INFO  2024-10-11T18:35:21,163 (?.:) - Migrating schema `scadalts` to version 2.7.0.5 - SynopticPanel 
+INFO  2024-10-11T18:35:21,171 (?.:) - Migrating schema `scadalts` to version 2.7.1.0 - UserNames 
+INFO  2024-10-11T18:35:21,186 (?.:) - Migrating schema `scadalts` to version 2.7.1.1 - HttpRetriever 
+INFO  2024-10-11T18:35:21,191 (?.:) - Migrating schema `scadalts` to version 2.7.1.2 - PurgeLimitStrategyDatapointProperty 
+INFO  2024-10-11T18:35:21,195 (?.:) - Migrating schema `scadalts` to version 2.7.1.3 - ExportImportReport 
+INFO  2024-10-11T18:35:21,203 (?.:) - Migrating schema `scadalts` to version 2.7.2.1 - MqttPointLocatorUpdateDataPointXid 
+INFO  2024-10-11T18:35:21,207 (?.:) - Migrating schema `scadalts` to version 2.7.3.0 - SqlDataSourceUpdate 
+INFO  2024-10-11T18:35:21,211 (?.:) - Migrating schema `scadalts` to version 2.7.4.1 - AddSoapServicesUser 
+INFO  2024-10-11T18:35:21,216 (?.:) - Migrating schema `scadalts` to version 2.7.5.3 - AddLangToUser 
+INFO  2024-10-11T18:35:21,231 (?.:) - Migrating schema `scadalts` to version 2.7.5.3.1 - AddHttpdsUser 
+INFO  2024-10-11T18:35:21,236 (?.:) - Migrating schema `scadalts` to version 2.7.5.3.2 - AddFullScreenToUser 
+INFO  2024-10-11T18:35:21,262 (?.:) - Migrating schema `scadalts` to version 2.7.5.4.1 - UpdateAbsoluteToRelativeUrlInLinkComponent 
+INFO  2024-10-11T18:35:21,266 (?.:) - Migrating schema `scadalts` to version 2.7.6.1 - ChangeLengthLimitForSettingName 
+INFO  2024-10-11T18:35:21,278 (?.:) - Migrating schema `scadalts` to version 2.7.7.1 - SqlDataSourceLimit 
+INFO  2024-10-11T18:35:21,282 (?.:) - Successfully applied 30 migrations to schema `scadalts` (execution time 00:01.050s) 
+INFO  2024-10-11T18:35:21,289 (?.:) - Successfully validated 30 migrations (execution time 00:00.001s) 
+INFO  2024-10-11T18:35:21,291 (?.:) - Current version of schema `scadalts`: 2.7.7.1 
+INFO  2024-10-11T18:35:21,291 (?.:) - Schema `scadalts` is up to date. No migration necessary. 
+INFO  2024-10-11T18:35:21,293 (?.:) - Quartz - job-ResetCacheHighestAlarmLevel scheduled, Trigger 'DEFAULT.Quartz - trigger-ResetCacheHighestAlarmLevel':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: Fri Oct 11 19:00:00 UTC 2024 
+INFO  2024-10-11T18:35:21,299 (?.:) - Cache event detectors initialized 
+INFO  2024-10-11T18:35:21,300 (?.:) - Cache data points initialized 
+INFO  2024-10-11T18:35:21,308 (?.:) - Quartz - job-DataSourcePointsCache scheduled, Trigger 'DEFAULT.Quartz - trigger-DataSourcePointsCache':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: Fri Oct 11 18:36:00 UTC 2024 
+INFO  2024-10-11T18:35:21,311 (?.:) - Cache point hierarchy initialized 
+INFO  2024-10-11T18:35:21,312 (?.:) - Cache views initialized 
+INFO  2024-10-11T18:35:21,323 (?.:) - Cache views hierarchy initialized 
+INFO  2024-10-11T18:35:21,323 (?.:) - Quartz - job-EverySecond scheduled, Trigger 'DEFAULT.Quartz - trigger-EverySecondTrigger':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: Fri Oct 11 18:35:18 UTC 2024 
+INFO  2024-10-11T18:35:21,323 (?.:) - Quartz EverySecond initialized 
+INFO  2024-10-11T18:35:21,323 (?.:) - Scada-LTS context started 
+INFO  2024-10-11T19:00:00,028 (?.:) - ResetCacheHighestAlarmLevel executed in [21] ms 
+INFO  2024-10-11T19:11:47,918 (?.:) - Data source 'Water_Tank' initialized 
+INFO  2024-10-11T19:12:24,769 (?.:) - Data point 'Water_Tank - Quality' initialized 
+INFO  2024-10-11T19:12:25,456 (?.:) - Data point 'Water_Tank - Size' initialized 
+INFO  2024-10-11T19:12:26,139 (?.:) - Data point 'Water_Tank - Temp' initialized 
+INFO  2024-10-11T19:14:47,671 (?.:) - Data point 'Water_Tank - Temp' stopped 
+INFO  2024-10-11T19:14:47,679 (?.:) - Data point 'Water_Tank - Temp - The Temperature of the water' initialized 
+INFO  2024-10-11T19:15:31,022 (?.:) - Data point 'Water_Tank - Size' stopped 
+INFO  2024-10-11T19:15:31,033 (?.:) - Data point 'Water_Tank - Size - Amount of Water left in tank' initialized 
+INFO  2024-10-11T19:15:45,205 (?.:) - Data point 'Water_Tank - Size - Amount of Water left in tank' stopped 
+INFO  2024-10-11T19:15:45,213 (?.:) - Data point 'Water_Tank - Size - Amount of Water left in tank' initialized 
+INFO  2024-10-11T19:16:40,796 (?.:) - Data point 'Water_Tank - Quality' stopped 
+INFO  2024-10-11T19:16:40,803 (?.:) - Data point 'Water_Tank - Quality - Quality of water in tank' initialized 
+INFO  2024-10-11T19:17:02,527 (?.:) - Quartz - job-UpdatePendingEvents scheduled, Trigger 'DEFAULT.Quartz - trigger-UpdatePendingEvents':  triggerClass: 'org.quartz.SimpleTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: Fri Oct 11 19:18:42 UTC 2024 
+INFO  2024-10-11T19:21:22,007 (?.:) - Data point 'Water_Tank - Quality - Quality of water in tank' stopped 
+INFO  2024-10-11T19:21:22,021 (?.:) - Data point 'Water_Tank - Quality - Quality of water in tank' initialized 
+INFO  2024-10-11T19:23:15,437 (?.:) - Data point 'Water_Tank - Quality - Quality of water in tank' stopped 
+INFO  2024-10-11T19:23:15,449 (?.:) - Data point 'Water_Tank - Quality - Quality of water in tank' initialized 
+INFO  2024-10-11T19:25:18,547 (?.:) - Data point 'Water_Tank - Temp - The Temperature of the water' stopped 
+INFO  2024-10-11T19:25:18,557 (?.:) - Data point 'Water_Tank - Temp - The Temperature of the water' initialized 
+INFO  2024-10-11T19:27:01,737 (?.:) - Data point 'Water_Tank - Size - Amount of Water left in tank' stopped 
+INFO  2024-10-11T19:27:01,743 (?.:) - Data point 'Water_Tank - Size - Amount of Water left in tank' initialized 
+INFO  2024-10-11T19:27:05,703 (?.:) - Data point 'Water_Tank - Size - Amount of Water left in tank' stopped 
+INFO  2024-10-11T19:27:05,713 (?.:) - Data point 'Water_Tank - Size - Amount of Water left in tank' initialized 
