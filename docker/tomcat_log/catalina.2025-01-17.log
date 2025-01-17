@@ -273,3 +273,7 @@
 17-Jan-2025 18:47:17.655 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/usr/local/tomcat/webapps/Scada-LTS.war] has finished in [4,123] ms
 17-Jan-2025 18:47:17.657 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
 17-Jan-2025 18:47:17.662 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4166] milliseconds
+17-Jan-2025 18:50:22.015 INFO [Thread-4] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+17-Jan-2025 18:50:22.017 INFO [Thread-4] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+17-Jan-2025 18:50:23.156 INFO [Thread-4] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+17-Jan-2025 18:50:23.163 INFO [Thread-4] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]

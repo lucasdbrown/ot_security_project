@@ -1314,3 +1314,29 @@ INFO  2025-01-17T18:47:17,459 (?.:) - Cache views hierarchy initialized
 INFO  2025-01-17T18:47:17,460 (?.:) - Quartz - job-EverySecond scheduled, Trigger 'DEFAULT.Quartz - trigger-EverySecondTrigger':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: Fri Jan 17 18:47:15 UTC 2025 
 INFO  2025-01-17T18:47:17,460 (?.:) - Quartz EverySecond initialized 
 INFO  2025-01-17T18:47:17,460 (?.:) - Scada-LTS context started 
+INFO  2025-01-17T18:50:22,028 (?.:) - Scada-LTS context terminating 
+INFO  2025-01-17T18:50:22,031 (?.:) - Stopping RuntimeManager 
+INFO  2025-01-17T18:50:22,033 (?.:) - Data point 'Water_Tank - Temp - The Temperature of the water' stopped 
+INFO  2025-01-17T18:50:22,033 (?.:) - Data point 'Water_Tank - Quality - Quality of water in tank' stopped 
+INFO  2025-01-17T18:50:22,033 (?.:) - Data point 'Water_Tank - Size - Amount of Water left in tank' stopped 
+INFO  2025-01-17T18:50:22,033 (?.:) - Data source 'Water_Tank' stopped 
+INFO  2025-01-17T18:50:22,033 (?.:) - Stopped RuntimeManager 
+INFO  2025-01-17T18:50:22,033 (?.:) - Stopping EventManager 
+INFO  2025-01-17T18:50:22,033 (?.:) - Stopped EventManager 
+INFO  2025-01-17T18:50:22,034 (?.:) - Stopping BackgroundProcessing 
+INFO  2025-01-17T18:50:22,034 (?.:) - Stopped MediumPriorityService 
+INFO  2025-01-17T18:50:22,034 (?.:) - Stopped LowPriorityService 
+INFO  2025-01-17T18:50:22,034 (?.:) - Stopped BackgroundProcessing 
+INFO  2025-01-17T18:50:22,034 (?.:) - Stopping RealTimeTimer 
+INFO  2025-01-17T18:50:22,035 (?.:) - Stopped RealTimeTimer 
+INFO  2025-01-17T18:50:22,035 (?.:) - Stopping database 
+INFO  2025-01-17T18:50:22,039 (?.:) - Unregistered jdbc driver: com.mysql.jdbc.Driver 
+INFO  2025-01-17T18:50:22,039 (?.:) - Unregistered jdbc driver: com.mysql.fabric.jdbc.FabricMySQLDriver 
+INFO  2025-01-17T18:50:22,039 (?.:) - Stopped database 
+INFO  2025-01-17T18:50:22,039 (?.:) - Scada-LTS context terminated 
+INFO  2025-01-17T18:50:22,114 (?.:) - Quartz - job-DataSourcePointsCache stopped, DEFAULT.Quartz - job-DataSourcePointsCache 
+INFO  2025-01-17T18:50:22,114 (?.:) - Quartz - job-EverySecond stopped, DEFAULT.Quartz - job-EverySecond 
+INFO  2025-01-17T18:50:22,114 (?.:) - Quartz - job-ResetCacheHighestAlarmLevel stopped, DEFAULT.Quartz - job-ResetCacheHighestAlarmLevel 
+INFO  2025-01-17T18:50:22,115 (?.:) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down. 
+INFO  2025-01-17T18:50:22,115 (?.:) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused. 
+INFO  2025-01-17T18:50:22,115 (?.:) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete. 

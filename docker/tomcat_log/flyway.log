@@ -9,3 +9,7 @@ INFO  2025-01-17T18:47:17,213 (?.:) - Database: jdbc:mysql://database:3306/scada
 INFO  2025-01-17T18:47:17,271 (?.:) - Successfully validated 30 migrations (execution time 00:00.022s) 
 INFO  2025-01-17T18:47:17,275 (?.:) - Current version of schema `scadalts`: 2.7.7.1 
 INFO  2025-01-17T18:47:17,276 (?.:) - Schema `scadalts` is up to date. No migration necessary. 
+INFO  2025-01-17T18:50:22,035 (?.:) - Stopping database 
+INFO  2025-01-17T18:50:22,039 (?.:) - Unregistered jdbc driver: com.mysql.jdbc.Driver 
+INFO  2025-01-17T18:50:22,039 (?.:) - Unregistered jdbc driver: com.mysql.fabric.jdbc.FabricMySQLDriver 
+INFO  2025-01-17T18:50:22,039 (?.:) - Stopped database 

@@ -24,3 +24,5 @@
 17-Jan-2025 18:47:14.885 INFO [main] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
 17-Jan-2025 18:47:15.078 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
 17-Jan-2025 18:47:16.089 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring FrameworkServlet 'springDispatcher'
+17-Jan-2025 18:50:22.027 INFO [Thread-4] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'springDispatcher'
+17-Jan-2025 18:50:22.104 INFO [Thread-4] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext

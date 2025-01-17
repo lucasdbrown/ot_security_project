@@ -7,3 +7,9 @@ docker_win/db_conf/
 docker_win/db_data/
 docker_win/tomcat_log/
 docker_win/docker/
+
+# Docker Folders
+docker/db_conf/
+docker/db_data/
+docker/tomcat_log/
+docker/docker/
