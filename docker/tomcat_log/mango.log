@@ -96,3 +96,908 @@ INFO  2024-10-11T19:27:01,737 (?.:) - Data point 'Water_Tank - Size - Amount of 
 INFO  2024-10-11T19:27:01,743 (?.:) - Data point 'Water_Tank - Size - Amount of Water left in tank' initialized 
 INFO  2024-10-11T19:27:05,703 (?.:) - Data point 'Water_Tank - Size - Amount of Water left in tank' stopped 
 INFO  2024-10-11T19:27:05,713 (?.:) - Data point 'Water_Tank - Size - Amount of Water left in tank' initialized 
+INFO  2024-10-11T19:39:18,521 (?.:) - Scada-LTS context terminating 
+INFO  2024-10-11T19:39:18,523 (?.:) - Stopping RuntimeManager 
+INFO  2024-10-11T19:39:18,524 (?.:) - Data point 'Water_Tank - Temp - The Temperature of the water' stopped 
+INFO  2024-10-11T19:39:18,524 (?.:) - Data point 'Water_Tank - Quality - Quality of water in tank' stopped 
+INFO  2024-10-11T19:39:18,524 (?.:) - Data point 'Water_Tank - Size - Amount of Water left in tank' stopped 
+INFO  2024-10-11T19:39:18,524 (?.:) - Data source 'Water_Tank' stopped 
+INFO  2024-10-11T19:39:18,524 (?.:) - Stopped RuntimeManager 
+INFO  2024-10-11T19:39:18,524 (?.:) - Stopping EventManager 
+INFO  2024-10-11T19:39:18,525 (?.:) - Stopped EventManager 
+INFO  2024-10-11T19:39:18,525 (?.:) - Stopping BackgroundProcessing 
+INFO  2024-10-11T19:39:18,525 (?.:) - Stopped MediumPriorityService 
+INFO  2024-10-11T19:39:18,525 (?.:) - Stopped LowPriorityService 
+INFO  2024-10-11T19:39:18,525 (?.:) - Stopped BackgroundProcessing 
+INFO  2024-10-11T19:39:18,525 (?.:) - Stopping RealTimeTimer 
+INFO  2024-10-11T19:39:18,525 (?.:) - Stopped RealTimeTimer 
+INFO  2024-10-11T19:39:18,526 (?.:) - Stopping database 
+INFO  2024-10-11T19:39:18,530 (?.:) - Unregistered jdbc driver: com.mysql.jdbc.Driver 
+INFO  2024-10-11T19:39:18,530 (?.:) - Unregistered jdbc driver: com.mysql.fabric.jdbc.FabricMySQLDriver 
+INFO  2024-10-11T19:39:18,530 (?.:) - Stopped database 
+INFO  2024-10-11T19:39:18,530 (?.:) - Scada-LTS context terminated 
+INFO  2024-10-11T19:39:18,595 (?.:) - Quartz - job-UpdatePendingEvents stopped, DEFAULT.Quartz - job-UpdatePendingEvents 
+INFO  2024-10-11T19:39:18,595 (?.:) - Quartz - job-DataSourcePointsCache stopped, DEFAULT.Quartz - job-DataSourcePointsCache 
+INFO  2024-10-11T19:39:18,596 (?.:) - Quartz - job-EverySecond stopped, DEFAULT.Quartz - job-EverySecond 
+INFO  2024-10-11T19:39:18,596 (?.:) - Quartz - job-ResetCacheHighestAlarmLevel stopped, DEFAULT.Quartz - job-ResetCacheHighestAlarmLevel 
+INFO  2024-10-11T19:39:18,596 (?.:) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down. 
+INFO  2024-10-11T19:39:18,596 (?.:) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused. 
+INFO  2024-10-11T19:39:18,596 (?.:) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete. 
+INFO  2024-11-04T17:15:28,237 (?.:) - Job execution threads will use class loader of thread: main 
+INFO  2024-11-04T17:15:28,244 (?.:) - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl 
+INFO  2024-11-04T17:15:28,244 (?.:) - Quartz Scheduler v.1.6.3 created. 
+INFO  2024-11-04T17:15:28,245 (?.:) - RAMJobStore initialized. 
+INFO  2024-11-04T17:15:28,245 (?.:) - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties' 
+INFO  2024-11-04T17:15:28,245 (?.:) - Quartz scheduler version: 1.6.3 
+INFO  2024-11-04T17:15:28,249 (?.:) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started. 
+INFO  2024-11-04T17:15:28,263 (?.:) - Initializing pooled connection manager 
+INFO  2024-11-04T17:15:28,263 (?.:) - Looking for Datasource: java:comp/env/jdbc/scadalts 
+INFO  2024-11-04T17:15:28,267 (?.:) - DataSource meta: MySQL 8.0.32 
+INFO  2024-11-04T17:15:29,599 (?.:) - Scada-LTS context starting at: 1730740529599 
+INFO  2024-11-04T17:15:29,609 (?.:) - 
+**************************************************
+*             Welcome to Scada-LTS!              *
+**************************************************
+* Version: v2.7.8
+* Build: 9871735523
+* Powered by: Scada-LTS team
+ 
+INFO  2024-11-04T17:15:29,884 (?.:) - schemaExist:true 
+INFO  2024-11-04T17:15:29,886 (?.:) - BaseLineNotExist:false 
+WARN  2024-11-04T17:15:29,913 (?.:) - Use of dots (.) as path separators will be deprecated in Flyway 7. Path: org.scada_lts.dao.migration.mysql 
+INFO  2024-11-04T17:15:29,918 (?.:) - Flyway Community Edition 6.5.5 by Redgate 
+INFO  2024-11-04T17:15:29,937 (?.:) - Database: jdbc:mysql://database:3306/scadalts (MySQL 8.0) 
+INFO  2024-11-04T17:15:29,961 (?.:) - Successfully validated 30 migrations (execution time 00:00.008s) 
+INFO  2024-11-04T17:15:29,965 (?.:) - Current version of schema `scadalts`: 2.7.7.1 
+INFO  2024-11-04T17:15:29,965 (?.:) - Schema `scadalts` is up to date. No migration necessary. 
+INFO  2024-11-04T17:15:29,969 (?.:) - Quartz - job-ResetCacheHighestAlarmLevel scheduled, Trigger 'DEFAULT.Quartz - trigger-ResetCacheHighestAlarmLevel':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: Mon Nov 04 19:00:00 UTC 2024 
+INFO  2024-11-04T17:15:30,013 (?.:) - Cache event detectors initialized 
+INFO  2024-11-04T17:15:30,015 (?.:) - Cache data points initialized 
+INFO  2024-11-04T17:15:30,043 (?.:) - Data source 'Water_Tank' initialized 
+INFO  2024-11-04T17:15:30,071 (?.:) - Data point 'Water_Tank - Temp - The Temperature of the water' initialized 
+INFO  2024-11-04T17:15:30,072 (?.:) - Data point 'Water_Tank - Quality - Quality of water in tank' initialized 
+INFO  2024-11-04T17:15:30,074 (?.:) - Data point 'Water_Tank - Size - Amount of Water left in tank' initialized 
+INFO  2024-11-04T17:15:30,091 (?.:) - Quartz - job-DataSourcePointsCache scheduled, Trigger 'DEFAULT.Quartz - trigger-DataSourcePointsCache':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: Mon Nov 04 17:16:00 UTC 2024 
+INFO  2024-11-04T17:15:30,108 (?.:) - Cache point hierarchy initialized 
+INFO  2024-11-04T17:15:30,111 (?.:) - Cache views initialized 
+INFO  2024-11-04T17:15:30,122 (?.:) - Cache views hierarchy initialized 
+INFO  2024-11-04T17:15:30,122 (?.:) - Quartz - job-EverySecond scheduled, Trigger 'DEFAULT.Quartz - trigger-EverySecondTrigger':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: Mon Nov 04 17:15:28 UTC 2024 
+INFO  2024-11-04T17:15:30,122 (?.:) - Quartz EverySecond initialized 
+INFO  2024-11-04T17:15:30,122 (?.:) - Scada-LTS context started 
+INFO  2024-11-04T17:17:10,592 (?.:) - Quartz - job-UpdatePendingEvents scheduled, Trigger 'DEFAULT.Quartz - trigger-UpdatePendingEvents':  triggerClass: 'org.quartz.SimpleTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: Mon Nov 04 17:18:50 UTC 2024 
+INFO  2024-11-04T17:25:25,865 (?.:) - Scada-LTS context terminating 
+INFO  2024-11-04T17:25:25,867 (?.:) - Stopping RuntimeManager 
+INFO  2024-11-04T17:25:25,871 (?.:) - Data point 'Water_Tank - Temp - The Temperature of the water' stopped 
+INFO  2024-11-04T17:25:25,871 (?.:) - Data point 'Water_Tank - Quality - Quality of water in tank' stopped 
+INFO  2024-11-04T17:25:25,871 (?.:) - Data point 'Water_Tank - Size - Amount of Water left in tank' stopped 
+INFO  2024-11-04T17:25:25,872 (?.:) - Data source 'Water_Tank' stopped 
+INFO  2024-11-04T17:25:25,872 (?.:) - Stopped RuntimeManager 
+INFO  2024-11-04T17:25:25,872 (?.:) - Stopping EventManager 
+INFO  2024-11-04T17:25:25,872 (?.:) - Stopped EventManager 
+INFO  2024-11-04T17:25:25,872 (?.:) - Stopping BackgroundProcessing 
+INFO  2024-11-04T17:25:25,872 (?.:) - Stopped MediumPriorityService 
+INFO  2024-11-04T17:25:25,873 (?.:) - Stopped LowPriorityService 
+INFO  2024-11-04T17:25:25,873 (?.:) - Stopped BackgroundProcessing 
+INFO  2024-11-04T17:25:25,873 (?.:) - Stopping RealTimeTimer 
+INFO  2024-11-04T17:25:25,873 (?.:) - Stopped RealTimeTimer 
+INFO  2024-11-04T17:25:25,873 (?.:) - Stopping database 
+INFO  2024-11-04T17:25:25,877 (?.:) - Unregistered jdbc driver: com.mysql.jdbc.Driver 
+INFO  2024-11-04T17:25:25,877 (?.:) - Unregistered jdbc driver: com.mysql.fabric.jdbc.FabricMySQLDriver 
+INFO  2024-11-04T17:25:25,877 (?.:) - Stopped database 
+INFO  2024-11-04T17:25:25,877 (?.:) - Scada-LTS context terminated 
+INFO  2024-11-04T17:25:25,945 (?.:) - Quartz - job-UpdatePendingEvents stopped, DEFAULT.Quartz - job-UpdatePendingEvents 
+INFO  2024-11-04T17:25:25,945 (?.:) - Quartz - job-DataSourcePointsCache stopped, DEFAULT.Quartz - job-DataSourcePointsCache 
+INFO  2024-11-04T17:25:25,945 (?.:) - Quartz - job-EverySecond stopped, DEFAULT.Quartz - job-EverySecond 
+INFO  2024-11-04T17:25:25,945 (?.:) - Quartz - job-ResetCacheHighestAlarmLevel stopped, DEFAULT.Quartz - job-ResetCacheHighestAlarmLevel 
+INFO  2024-11-04T17:25:25,946 (?.:) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down. 
+INFO  2024-11-04T17:25:25,946 (?.:) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused. 
+INFO  2024-11-04T17:25:25,946 (?.:) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete. 
+INFO  2024-11-28T19:25:44,988 (?.:) - Job execution threads will use class loader of thread: main 
+INFO  2024-11-28T19:25:44,995 (?.:) - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl 
+INFO  2024-11-28T19:25:44,996 (?.:) - Quartz Scheduler v.1.6.3 created. 
+INFO  2024-11-28T19:25:44,996 (?.:) - RAMJobStore initialized. 
+INFO  2024-11-28T19:25:44,996 (?.:) - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties' 
+INFO  2024-11-28T19:25:44,996 (?.:) - Quartz scheduler version: 1.6.3 
+INFO  2024-11-28T19:25:45,000 (?.:) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started. 
+INFO  2024-11-28T19:25:45,014 (?.:) - Initializing pooled connection manager 
+INFO  2024-11-28T19:25:45,014 (?.:) - Looking for Datasource: java:comp/env/jdbc/scadalts 
+INFO  2024-11-28T19:25:45,017 (?.:) - DataSource meta: MySQL 8.0.32 
+INFO  2024-11-28T19:25:46,276 (?.:) - Scada-LTS context starting at: 1732821946276 
+INFO  2024-11-28T19:25:46,286 (?.:) - 
+**************************************************
+*             Welcome to Scada-LTS!              *
+**************************************************
+* Version: v2.7.8
+* Build: 9871735523
+* Powered by: Scada-LTS team
+ 
+INFO  2024-11-28T19:25:46,577 (?.:) - schemaExist:true 
+INFO  2024-11-28T19:25:46,579 (?.:) - BaseLineNotExist:false 
+WARN  2024-11-28T19:25:46,604 (?.:) - Use of dots (.) as path separators will be deprecated in Flyway 7. Path: org.scada_lts.dao.migration.mysql 
+INFO  2024-11-28T19:25:46,607 (?.:) - Flyway Community Edition 6.5.5 by Redgate 
+INFO  2024-11-28T19:25:46,629 (?.:) - Database: jdbc:mysql://database:3306/scadalts (MySQL 8.0) 
+INFO  2024-11-28T19:25:46,653 (?.:) - Successfully validated 30 migrations (execution time 00:00.008s) 
+INFO  2024-11-28T19:25:46,657 (?.:) - Current version of schema `scadalts`: 2.7.7.1 
+INFO  2024-11-28T19:25:46,657 (?.:) - Schema `scadalts` is up to date. No migration necessary. 
+INFO  2024-11-28T19:25:46,661 (?.:) - Quartz - job-ResetCacheHighestAlarmLevel scheduled, Trigger 'DEFAULT.Quartz - trigger-ResetCacheHighestAlarmLevel':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: Thu Nov 28 22:00:00 UTC 2024 
+INFO  2024-11-28T19:25:46,724 (?.:) - Cache event detectors initialized 
+INFO  2024-11-28T19:25:46,726 (?.:) - Cache data points initialized 
+INFO  2024-11-28T19:25:46,756 (?.:) - Data source 'Water_Tank' initialized 
+INFO  2024-11-28T19:25:46,785 (?.:) - Data point 'Water_Tank - Temp - The Temperature of the water' initialized 
+INFO  2024-11-28T19:25:46,787 (?.:) - Data point 'Water_Tank - Quality - Quality of water in tank' initialized 
+INFO  2024-11-28T19:25:46,788 (?.:) - Data point 'Water_Tank - Size - Amount of Water left in tank' initialized 
+INFO  2024-11-28T19:25:46,804 (?.:) - Quartz - job-DataSourcePointsCache scheduled, Trigger 'DEFAULT.Quartz - trigger-DataSourcePointsCache':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: Thu Nov 28 19:26:00 UTC 2024 
+INFO  2024-11-28T19:25:46,822 (?.:) - Cache point hierarchy initialized 
+INFO  2024-11-28T19:25:46,824 (?.:) - Cache views initialized 
+INFO  2024-11-28T19:25:46,837 (?.:) - Cache views hierarchy initialized 
+INFO  2024-11-28T19:25:46,837 (?.:) - Quartz - job-EverySecond scheduled, Trigger 'DEFAULT.Quartz - trigger-EverySecondTrigger':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: Thu Nov 28 19:25:45 UTC 2024 
+INFO  2024-11-28T19:25:46,837 (?.:) - Quartz EverySecond initialized 
+INFO  2024-11-28T19:25:46,837 (?.:) - Scada-LTS context started 
+INFO  2024-11-28T19:26:36,934 (?.:) - Quartz - job-UpdatePendingEvents scheduled, Trigger 'DEFAULT.Quartz - trigger-UpdatePendingEvents':  triggerClass: 'org.quartz.SimpleTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: Thu Nov 28 19:28:16 UTC 2024 
+INFO  2024-11-28T19:29:07,065 (?.:) - Data point 'Water_Tank - Temp - The Temperature of the water' stopped 
+INFO  2024-11-28T19:29:07,096 (?.:) - Data point 'Water_Tank - Temp - The Temperature of the water' initialized 
+INFO  2024-11-28T22:00:00,024 (?.:) - ResetCacheHighestAlarmLevel executed in [12] ms 
+INFO  2024-11-29T01:04:17,078 (?.:) - ResetCacheHighestAlarmLevel executed in [4] ms 
+INFO  2024-11-29T04:09:09,669 (?.:) - ResetCacheHighestAlarmLevel executed in [5] ms 
+INFO  2024-11-29T05:20:54,728 (?.:) - Scada-LTS context terminating 
+ERROR 2024-11-29T05:20:54,793 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-11-29T05:20:54,793 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-11-29T05:20:54,793 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-11-29T05:20:54,794 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; Server shutdown in progress; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Server shutdown in progress 
+ERROR 2024-11-29T05:20:54,794 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-11-29T05:20:54,795 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-11-29T05:20:54,795 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-11-29T05:20:54,795 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+INFO  2024-11-29T05:20:54,795 (?.:) - Quartz - job-UpdatePendingEvents stopped, DEFAULT.Quartz - job-UpdatePendingEvents 
+ERROR 2024-11-29T05:20:54,795 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-11-29T05:20:54,795 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+INFO  2024-11-29T05:20:54,795 (?.:) - Quartz - job-DataSourcePointsCache stopped, DEFAULT.Quartz - job-DataSourcePointsCache 
+ERROR 2024-11-29T05:20:54,795 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+INFO  2024-11-29T05:20:54,795 (?.:) - Quartz - job-EverySecond stopped, DEFAULT.Quartz - job-EverySecond 
+ERROR 2024-11-29T05:20:54,795 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+INFO  2024-11-29T05:20:54,795 (?.:) - Quartz - job-ResetCacheHighestAlarmLevel stopped, DEFAULT.Quartz - job-ResetCacheHighestAlarmLevel 
+INFO  2024-11-29T05:20:54,796 (?.:) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down. 
+INFO  2024-11-29T05:20:54,796 (?.:) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused. 
+INFO  2024-11-29T05:20:54,804 (?.:) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete. 
+ERROR 2024-11-29T05:20:54,806 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-11-29T05:20:54,806 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-11-29T05:20:54,806 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-11-29T05:20:54,795 (?.:) - Error saving 1 batch inserts. Data lost. 
+org.springframework.dao.DataAccessResourceFailureException: PreparedStatementCallback; SQL [insert pointValues (dataPointId,dataType,pointValue,ts) values (?,?,?,?)]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:79) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:82) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:655) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:668) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.batchUpdate(JdbcTemplate.java:956) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.BatchUpdateUtils.executeBatchUpdate(BatchUpdateUtils.java:35) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.batchUpdate(JdbcTemplate.java:1006) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.batchUpdate(JdbcTemplate.java:1001) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.scada_lts.dao.pointvalues.PointValueDAO.executeBatchUpdateInsert(PointValueDAO.java:505) ~[classes/:?]
+	at org.scada_lts.mango.service.PointValueService$BatchWriteBehind.work(PointValueService.java:578) [classes/:?]
+	at com.serotonin.mango.rt.maint.work.AbstractBeforeAfterWorkItem.execute(AbstractBeforeAfterWorkItem.java:167) [classes/:?]
+	at com.serotonin.mango.rt.maint.BackgroundProcessing$1.run(BackgroundProcessing.java:61) [classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:?]
+	at java.lang.Thread.run(Unknown Source) [?:?]
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:?]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.Util.getInstance(Util.java:386) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:919) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.ConnectionImpl.throwConnectionClosedException(ConnectionImpl.java:1182) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1177) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:4037) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:4006) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at jdk.internal.reflect.GeneratedMethodAccessor129.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at org.apache.tomcat.jdbc.pool.ProxyConnection.invoke(ProxyConnection.java:131) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:107) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.AbstractCreateStatementInterceptor.invoke(AbstractCreateStatementInterceptor.java:70) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:107) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.AbstractCreateStatementInterceptor.invoke(AbstractCreateStatementInterceptor.java:70) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.ResetAbandonedTimer.invoke(ResetAbandonedTimer.java:74) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:107) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.AbstractCreateStatementInterceptor.invoke(AbstractCreateStatementInterceptor.java:70) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:107) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.ConnectionState.invoke(ConnectionState.java:159) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:107) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.TrapException.invoke(TrapException.java:39) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:107) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.AbstractCreateStatementInterceptor.invoke(AbstractCreateStatementInterceptor.java:70) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:107) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.DisposableConnectionFacade.invoke(DisposableConnectionFacade.java:81) ~[tomcat-jdbc.jar:?]
+	at com.sun.proxy.$Proxy77.prepareStatement(Unknown Source) ~[?:?]
+	at org.springframework.jdbc.core.JdbcTemplate$SimplePreparedStatementCreator.createPreparedStatement(JdbcTemplate.java:1530) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:633) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	... 12 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Server shutdown in progress
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:?]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.Util.getInstance(Util.java:386) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:919) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2524) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2675) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1915) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2023) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at jdk.internal.reflect.GeneratedMethodAccessor128.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.AbstractQueryReport$StatementProxy.invoke(AbstractQueryReport.java:214) ~[tomcat-jdbc.jar:?]
+	at com.sun.proxy.$Proxy121.executeQuery(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor128.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.AbstractQueryReport$StatementProxy.invoke(AbstractQueryReport.java:214) ~[tomcat-jdbc.jar:?]
+	at com.sun.proxy.$Proxy121.executeQuery(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor128.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at org.apache.tomcat.jdbc.pool.StatementFacade$StatementProxy.invoke(StatementFacade.java:118) ~[tomcat-jdbc.jar:?]
+	at com.sun.proxy.$Proxy121.executeQuery(Unknown Source) ~[?:?]
+	at org.springframework.jdbc.core.JdbcTemplate$1.doInPreparedStatement(JdbcTemplate.java:698) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:639) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:690) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:722) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:732) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:782) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.scada_lts.dao.event.EventDAO.getEventHandlers(EventDAO.java:1303) ~[classes/:?]
+	at org.scada_lts.mango.service.EventService.getEventHandlers(EventService.java:360) ~[classes/:?]
+	at com.serotonin.mango.rt.EventManager.setHandlers(EventManager.java:385) ~[classes/:?]
+	at com.serotonin.mango.rt.EventManager.raiseEvent(EventManager.java:115) ~[classes/:?]
+	at com.serotonin.mango.rt.EventManager.raiseEvent(EventManager.java:72) ~[classes/:?]
+	at com.serotonin.mango.rt.event.type.SystemEventType.raiseEvent(SystemEventType.java:150) ~[classes/:?]
+	at com.serotonin.mango.MangoContextListener.contextDestroyed(MangoContextListener.java:207) ~[classes/:?]
+	at org.scada_lts.web.beans.ScadaContextClosedEvent.onApplicationEvent(ScadaContextClosedEvent.java:24) ~[classes/:?]
+	at org.scada_lts.web.beans.ScadaContextClosedEvent.onApplicationEvent(ScadaContextClosedEvent.java:11) ~[classes/:?]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:393) ~[spring-context-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:347) ~[spring-context-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:991) ~[spring-context-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:958) ~[spring-context-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.destroy(FrameworkServlet.java:829) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.apache.catalina.core.StandardWrapper.unload(StandardWrapper.java:1258) ~[catalina.jar:9.0.86]
+	at org.apache.catalina.core.StandardWrapper.stopInternal(StandardWrapper.java:1544) ~[catalina.jar:9.0.86]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242) ~[catalina.jar:9.0.86]
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5135) ~[catalina.jar:9.0.86]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242) ~[catalina.jar:9.0.86]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1348) ~[catalina.jar:9.0.86]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1337) ~[catalina.jar:9.0.86]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[?:?]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-util.jar:9.0.86]
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source) ~[?:?]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:931) ~[catalina.jar:9.0.86]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242) ~[catalina.jar:9.0.86]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1348) ~[catalina.jar:9.0.86]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1337) ~[catalina.jar:9.0.86]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[?:?]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-util.jar:9.0.86]
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source) ~[?:?]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:931) ~[catalina.jar:9.0.86]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242) ~[catalina.jar:9.0.86]
+	at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:496) ~[catalina.jar:9.0.86]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242) ~[catalina.jar:9.0.86]
+	at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:978) ~[catalina.jar:9.0.86]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242) ~[catalina.jar:9.0.86]
+	at org.apache.catalina.startup.Catalina.stop(Catalina.java:810) ~[catalina.jar:9.0.86]
+	at org.apache.catalina.startup.Catalina$CatalinaShutdownHook.run(Catalina.java:955) ~[catalina.jar:9.0.86]
+ERROR 2024-11-29T05:20:54,808 (?.:) - Error saving 2 batch inserts. Data lost. 
+org.springframework.dao.DataAccessResourceFailureException: PreparedStatementCallback; SQL [insert pointValues (dataPointId,dataType,pointValue,ts) values (?,?,?,?)]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:79) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:82) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:655) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:668) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.batchUpdate(JdbcTemplate.java:956) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.BatchUpdateUtils.executeBatchUpdate(BatchUpdateUtils.java:35) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.batchUpdate(JdbcTemplate.java:1006) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.batchUpdate(JdbcTemplate.java:1001) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.scada_lts.dao.pointvalues.PointValueDAO.executeBatchUpdateInsert(PointValueDAO.java:505) ~[classes/:?]
+	at org.scada_lts.mango.service.PointValueService$BatchWriteBehind.work(PointValueService.java:578) [classes/:?]
+	at com.serotonin.mango.rt.maint.work.AbstractBeforeAfterWorkItem.execute(AbstractBeforeAfterWorkItem.java:167) [classes/:?]
+	at com.serotonin.mango.rt.maint.BackgroundProcessing$1.run(BackgroundProcessing.java:61) [classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:?]
+	at java.lang.Thread.run(Unknown Source) [?:?]
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at jdk.internal.reflect.GeneratedConstructorAccessor109.newInstance(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:?]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.Util.getInstance(Util.java:386) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:919) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.ConnectionImpl.throwConnectionClosedException(ConnectionImpl.java:1182) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1177) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:4037) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:4006) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at jdk.internal.reflect.GeneratedMethodAccessor129.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at org.apache.tomcat.jdbc.pool.ProxyConnection.invoke(ProxyConnection.java:131) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:107) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.AbstractCreateStatementInterceptor.invoke(AbstractCreateStatementInterceptor.java:70) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:107) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.AbstractCreateStatementInterceptor.invoke(AbstractCreateStatementInterceptor.java:70) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.ResetAbandonedTimer.invoke(ResetAbandonedTimer.java:74) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:107) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.AbstractCreateStatementInterceptor.invoke(AbstractCreateStatementInterceptor.java:70) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:107) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.ConnectionState.invoke(ConnectionState.java:159) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:107) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.TrapException.invoke(TrapException.java:39) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:107) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.AbstractCreateStatementInterceptor.invoke(AbstractCreateStatementInterceptor.java:70) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:107) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.DisposableConnectionFacade.invoke(DisposableConnectionFacade.java:81) ~[tomcat-jdbc.jar:?]
+	at com.sun.proxy.$Proxy77.prepareStatement(Unknown Source) ~[?:?]
+	at org.springframework.jdbc.core.JdbcTemplate$SimplePreparedStatementCreator.createPreparedStatement(JdbcTemplate.java:1530) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:633) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	... 12 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Server shutdown in progress
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:?]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.Util.getInstance(Util.java:386) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:919) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2524) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2675) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1915) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2023) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at jdk.internal.reflect.GeneratedMethodAccessor128.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.AbstractQueryReport$StatementProxy.invoke(AbstractQueryReport.java:214) ~[tomcat-jdbc.jar:?]
+	at com.sun.proxy.$Proxy121.executeQuery(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor128.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.AbstractQueryReport$StatementProxy.invoke(AbstractQueryReport.java:214) ~[tomcat-jdbc.jar:?]
+	at com.sun.proxy.$Proxy121.executeQuery(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor128.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at org.apache.tomcat.jdbc.pool.StatementFacade$StatementProxy.invoke(StatementFacade.java:118) ~[tomcat-jdbc.jar:?]
+	at com.sun.proxy.$Proxy121.executeQuery(Unknown Source) ~[?:?]
+	at org.springframework.jdbc.core.JdbcTemplate$1.doInPreparedStatement(JdbcTemplate.java:698) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:639) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:690) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:722) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:732) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:800) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:819) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.scada_lts.dao.SystemSettingsDAO.getValue(SystemSettingsDAO.java:211) ~[classes/:?]
+	at org.scada_lts.dao.SystemSettingsDAO.getBooleanValue(SystemSettingsDAO.java:253) ~[classes/:?]
+	at org.scada_lts.mango.service.SystemSettingsService.isWorkItemsReportingEnabled(SystemSettingsService.java:401) ~[classes/:?]
+	at com.serotonin.mango.rt.maint.work.AbstractBeforeAfterWorkItem.isEnabled(AbstractBeforeAfterWorkItem.java:342) ~[classes/:?]
+	at com.serotonin.mango.rt.maint.work.AbstractBeforeAfterWorkItem.<init>(AbstractBeforeAfterWorkItem.java:117) ~[classes/:?]
+	at com.serotonin.mango.rt.dataImage.DataPointRT$EventNotifyWorkItem.<init>(DataPointRT.java:521) ~[classes/:?]
+	at com.serotonin.mango.rt.dataImage.DataPointRT.fireEvents(DataPointRT.java:487) ~[classes/:?]
+	at com.serotonin.mango.rt.dataImage.DataPointRT.savePointValue(DataPointRT.java:311) ~[classes/:?]
+	at com.serotonin.mango.rt.dataImage.DataPointRT.updatePointValue(DataPointRT.java:167) ~[classes/:?]
+	at com.serotonin.mango.rt.dataSource.virtual.VirtualDataSourceRT.doPoll(VirtualDataSourceRT.java:42) ~[classes/:?]
+	at com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout(PollingDataSource.java:81) ~[classes/:?]
+	at com.serotonin.mango.util.timeout.TimeoutTask.run(TimeoutTask.java:37) ~[classes/:?]
+	at com.serotonin.timer.TimerTask.run(TimerTask.java:143) ~[classes/:?]
+	... 3 more
+ERROR 2024-11-29T05:20:54,810 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-11-29T05:20:55,796 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-11-29T05:20:55,797 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-11-29T05:20:55,797 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-11-29T05:20:55,798 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-11-29T05:20:55,798 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-11-29T05:20:55,799 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-11-29T05:20:55,800 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-11-29T05:20:55,801 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-11-29T05:20:55,801 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-11-29T05:20:55,801 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-11-29T05:20:55,802 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-11-29T05:20:55,802 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-11-29T05:20:55,802 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-11-29T05:20:55,803 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-11-29T05:20:55,805 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-11-29T05:20:55,798 (?.:) - Error saving 2 batch inserts. Data lost. 
+org.springframework.dao.DataAccessResourceFailureException: PreparedStatementCallback; SQL [insert pointValues (dataPointId,dataType,pointValue,ts) values (?,?,?,?)]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:79) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:82) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:655) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:668) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.batchUpdate(JdbcTemplate.java:956) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.BatchUpdateUtils.executeBatchUpdate(BatchUpdateUtils.java:35) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.batchUpdate(JdbcTemplate.java:1006) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.batchUpdate(JdbcTemplate.java:1001) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.scada_lts.dao.pointvalues.PointValueDAO.executeBatchUpdateInsert(PointValueDAO.java:505) ~[classes/:?]
+	at org.scada_lts.mango.service.PointValueService$BatchWriteBehind.work(PointValueService.java:578) [classes/:?]
+	at com.serotonin.mango.rt.maint.work.AbstractBeforeAfterWorkItem.execute(AbstractBeforeAfterWorkItem.java:167) [classes/:?]
+	at com.serotonin.mango.rt.maint.BackgroundProcessing$1.run(BackgroundProcessing.java:61) [classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:?]
+	at java.lang.Thread.run(Unknown Source) [?:?]
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at jdk.internal.reflect.GeneratedConstructorAccessor109.newInstance(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:?]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.Util.getInstance(Util.java:386) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:919) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.ConnectionImpl.throwConnectionClosedException(ConnectionImpl.java:1182) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1177) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:4037) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:4006) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at jdk.internal.reflect.GeneratedMethodAccessor129.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at org.apache.tomcat.jdbc.pool.ProxyConnection.invoke(ProxyConnection.java:131) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:107) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.AbstractCreateStatementInterceptor.invoke(AbstractCreateStatementInterceptor.java:70) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:107) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.AbstractCreateStatementInterceptor.invoke(AbstractCreateStatementInterceptor.java:70) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.ResetAbandonedTimer.invoke(ResetAbandonedTimer.java:74) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:107) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.AbstractCreateStatementInterceptor.invoke(AbstractCreateStatementInterceptor.java:70) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:107) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.ConnectionState.invoke(ConnectionState.java:159) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:107) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.TrapException.invoke(TrapException.java:39) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:107) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.AbstractCreateStatementInterceptor.invoke(AbstractCreateStatementInterceptor.java:70) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:107) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.DisposableConnectionFacade.invoke(DisposableConnectionFacade.java:81) ~[tomcat-jdbc.jar:?]
+	at com.sun.proxy.$Proxy77.prepareStatement(Unknown Source) ~[?:?]
+	at org.springframework.jdbc.core.JdbcTemplate$SimplePreparedStatementCreator.createPreparedStatement(JdbcTemplate.java:1530) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:633) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	... 12 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Server shutdown in progress
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:?]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.Util.getInstance(Util.java:386) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:919) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2524) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2675) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1915) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2023) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at jdk.internal.reflect.GeneratedMethodAccessor128.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.AbstractQueryReport$StatementProxy.invoke(AbstractQueryReport.java:214) ~[tomcat-jdbc.jar:?]
+	at com.sun.proxy.$Proxy121.executeQuery(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor128.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.AbstractQueryReport$StatementProxy.invoke(AbstractQueryReport.java:214) ~[tomcat-jdbc.jar:?]
+	at com.sun.proxy.$Proxy121.executeQuery(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor128.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at org.apache.tomcat.jdbc.pool.StatementFacade$StatementProxy.invoke(StatementFacade.java:118) ~[tomcat-jdbc.jar:?]
+	at com.sun.proxy.$Proxy121.executeQuery(Unknown Source) ~[?:?]
+	at org.springframework.jdbc.core.JdbcTemplate$1.doInPreparedStatement(JdbcTemplate.java:698) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:639) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:690) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:722) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:732) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:800) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:819) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.scada_lts.dao.SystemSettingsDAO.getValue(SystemSettingsDAO.java:211) ~[classes/:?]
+	at org.scada_lts.dao.SystemSettingsDAO.getBooleanValue(SystemSettingsDAO.java:253) ~[classes/:?]
+	at org.scada_lts.mango.service.SystemSettingsService.isWorkItemsReportingEnabled(SystemSettingsService.java:401) ~[classes/:?]
+	at com.serotonin.mango.rt.maint.work.AbstractBeforeAfterWorkItem.isEnabled(AbstractBeforeAfterWorkItem.java:342) ~[classes/:?]
+	at com.serotonin.mango.rt.maint.work.AbstractBeforeAfterWorkItem.<init>(AbstractBeforeAfterWorkItem.java:117) ~[classes/:?]
+	at com.serotonin.mango.rt.dataImage.DataPointRT$EventNotifyWorkItem.<init>(DataPointRT.java:521) ~[classes/:?]
+	at com.serotonin.mango.rt.dataImage.DataPointRT.fireEvents(DataPointRT.java:487) ~[classes/:?]
+	at com.serotonin.mango.rt.dataImage.DataPointRT.savePointValue(DataPointRT.java:311) ~[classes/:?]
+	at com.serotonin.mango.rt.dataImage.DataPointRT.updatePointValue(DataPointRT.java:167) ~[classes/:?]
+	at com.serotonin.mango.rt.dataSource.virtual.VirtualDataSourceRT.doPoll(VirtualDataSourceRT.java:42) ~[classes/:?]
+	at com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout(PollingDataSource.java:81) ~[classes/:?]
+	at com.serotonin.mango.util.timeout.TimeoutTask.run(TimeoutTask.java:37) ~[classes/:?]
+	at com.serotonin.timer.TimerTask.run(TimerTask.java:143) ~[classes/:?]
+	... 3 more
+ERROR 2024-11-29T05:20:55,809 (?.:) - Error saving 1 batch inserts. Data lost. 
+org.springframework.dao.DataAccessResourceFailureException: PreparedStatementCallback; SQL [insert pointValues (dataPointId,dataType,pointValue,ts) values (?,?,?,?)]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:79) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:82) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:655) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:668) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.batchUpdate(JdbcTemplate.java:956) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.BatchUpdateUtils.executeBatchUpdate(BatchUpdateUtils.java:35) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.batchUpdate(JdbcTemplate.java:1006) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.batchUpdate(JdbcTemplate.java:1001) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.scada_lts.dao.pointvalues.PointValueDAO.executeBatchUpdateInsert(PointValueDAO.java:505) ~[classes/:?]
+	at org.scada_lts.mango.service.PointValueService$BatchWriteBehind.work(PointValueService.java:578) [classes/:?]
+	at com.serotonin.mango.rt.maint.work.AbstractBeforeAfterWorkItem.execute(AbstractBeforeAfterWorkItem.java:167) [classes/:?]
+	at com.serotonin.mango.rt.maint.BackgroundProcessing$1.run(BackgroundProcessing.java:61) [classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:?]
+	at java.lang.Thread.run(Unknown Source) [?:?]
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at jdk.internal.reflect.GeneratedConstructorAccessor109.newInstance(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:?]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.Util.getInstance(Util.java:386) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:919) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.ConnectionImpl.throwConnectionClosedException(ConnectionImpl.java:1182) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1177) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:4037) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:4006) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at jdk.internal.reflect.GeneratedMethodAccessor129.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at org.apache.tomcat.jdbc.pool.ProxyConnection.invoke(ProxyConnection.java:131) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:107) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.AbstractCreateStatementInterceptor.invoke(AbstractCreateStatementInterceptor.java:70) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:107) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.AbstractCreateStatementInterceptor.invoke(AbstractCreateStatementInterceptor.java:70) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.ResetAbandonedTimer.invoke(ResetAbandonedTimer.java:74) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:107) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.AbstractCreateStatementInterceptor.invoke(AbstractCreateStatementInterceptor.java:70) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:107) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.ConnectionState.invoke(ConnectionState.java:159) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:107) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.TrapException.invoke(TrapException.java:39) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:107) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.AbstractCreateStatementInterceptor.invoke(AbstractCreateStatementInterceptor.java:70) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:107) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.DisposableConnectionFacade.invoke(DisposableConnectionFacade.java:81) ~[tomcat-jdbc.jar:?]
+	at com.sun.proxy.$Proxy77.prepareStatement(Unknown Source) ~[?:?]
+	at org.springframework.jdbc.core.JdbcTemplate$SimplePreparedStatementCreator.createPreparedStatement(JdbcTemplate.java:1530) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:633) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	... 12 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Server shutdown in progress
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:?]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.Util.getInstance(Util.java:386) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:919) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2524) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2675) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1915) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2023) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at jdk.internal.reflect.GeneratedMethodAccessor128.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.AbstractQueryReport$StatementProxy.invoke(AbstractQueryReport.java:214) ~[tomcat-jdbc.jar:?]
+	at com.sun.proxy.$Proxy121.executeQuery(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor128.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.AbstractQueryReport$StatementProxy.invoke(AbstractQueryReport.java:214) ~[tomcat-jdbc.jar:?]
+	at com.sun.proxy.$Proxy121.executeQuery(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor128.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at org.apache.tomcat.jdbc.pool.StatementFacade$StatementProxy.invoke(StatementFacade.java:118) ~[tomcat-jdbc.jar:?]
+	at com.sun.proxy.$Proxy121.executeQuery(Unknown Source) ~[?:?]
+	at org.springframework.jdbc.core.JdbcTemplate$1.doInPreparedStatement(JdbcTemplate.java:698) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:639) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:690) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:722) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:732) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:800) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:819) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.scada_lts.dao.SystemSettingsDAO.getValue(SystemSettingsDAO.java:211) ~[classes/:?]
+	at org.scada_lts.dao.SystemSettingsDAO.getBooleanValue(SystemSettingsDAO.java:253) ~[classes/:?]
+	at org.scada_lts.mango.service.SystemSettingsService.isWorkItemsReportingEnabled(SystemSettingsService.java:401) ~[classes/:?]
+	at com.serotonin.mango.rt.maint.work.AbstractBeforeAfterWorkItem.isEnabled(AbstractBeforeAfterWorkItem.java:342) ~[classes/:?]
+	at com.serotonin.mango.rt.maint.work.AbstractBeforeAfterWorkItem.<init>(AbstractBeforeAfterWorkItem.java:117) ~[classes/:?]
+	at com.serotonin.mango.rt.dataImage.DataPointRT$EventNotifyWorkItem.<init>(DataPointRT.java:521) ~[classes/:?]
+	at com.serotonin.mango.rt.dataImage.DataPointRT.fireEvents(DataPointRT.java:487) ~[classes/:?]
+	at com.serotonin.mango.rt.dataImage.DataPointRT.savePointValue(DataPointRT.java:311) ~[classes/:?]
+	at com.serotonin.mango.rt.dataImage.DataPointRT.updatePointValue(DataPointRT.java:167) ~[classes/:?]
+	at com.serotonin.mango.rt.dataSource.virtual.VirtualDataSourceRT.doPoll(VirtualDataSourceRT.java:42) ~[classes/:?]
+	at com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout(PollingDataSource.java:81) ~[classes/:?]
+	at com.serotonin.mango.util.timeout.TimeoutTask.run(TimeoutTask.java:37) ~[classes/:?]
+	at com.serotonin.timer.TimerTask.run(TimerTask.java:143) ~[classes/:?]
+	... 3 more
+ERROR 2024-11-29T05:20:55,816 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+INFO  2024-12-29T13:00:08,408 (?.:) - Job execution threads will use class loader of thread: main 
+INFO  2024-12-29T13:00:08,415 (?.:) - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl 
+INFO  2024-12-29T13:00:08,415 (?.:) - Quartz Scheduler v.1.6.3 created. 
+INFO  2024-12-29T13:00:08,416 (?.:) - RAMJobStore initialized. 
+INFO  2024-12-29T13:00:08,416 (?.:) - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties' 
+INFO  2024-12-29T13:00:08,416 (?.:) - Quartz scheduler version: 1.6.3 
+INFO  2024-12-29T13:00:08,420 (?.:) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started. 
+INFO  2024-12-29T13:00:08,434 (?.:) - Initializing pooled connection manager 
+INFO  2024-12-29T13:00:08,434 (?.:) - Looking for Datasource: java:comp/env/jdbc/scadalts 
+INFO  2024-12-29T13:00:08,438 (?.:) - DataSource meta: MySQL 8.0.32 
+INFO  2024-12-29T13:00:09,796 (?.:) - Scada-LTS context starting at: 1735477209796 
+INFO  2024-12-29T13:00:09,806 (?.:) - 
+**************************************************
+*             Welcome to Scada-LTS!              *
+**************************************************
+* Version: v2.7.8
+* Build: 9871735523
+* Powered by: Scada-LTS team
+ 
+INFO  2024-12-29T13:00:10,109 (?.:) - schemaExist:true 
+INFO  2024-12-29T13:00:10,111 (?.:) - BaseLineNotExist:false 
+WARN  2024-12-29T13:00:10,115 (?.:) - Use of dots (.) as path separators will be deprecated in Flyway 7. Path: org.scada_lts.dao.migration.mysql 
+INFO  2024-12-29T13:00:10,117 (?.:) - Flyway Community Edition 6.5.5 by Redgate 
+INFO  2024-12-29T13:00:10,157 (?.:) - Database: jdbc:mysql://database:3306/scadalts (MySQL 8.0) 
+INFO  2024-12-29T13:00:10,181 (?.:) - Successfully validated 30 migrations (execution time 00:00.008s) 
+INFO  2024-12-29T13:00:10,184 (?.:) - Current version of schema `scadalts`: 2.7.7.1 
+INFO  2024-12-29T13:00:10,184 (?.:) - Schema `scadalts` is up to date. No migration necessary. 
+INFO  2024-12-29T13:00:10,188 (?.:) - Quartz - job-ResetCacheHighestAlarmLevel scheduled, Trigger 'DEFAULT.Quartz - trigger-ResetCacheHighestAlarmLevel':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: Sun Dec 29 16:00:00 UTC 2024 
+INFO  2024-12-29T13:00:10,241 (?.:) - Cache event detectors initialized 
+INFO  2024-12-29T13:00:10,242 (?.:) - Cache data points initialized 
+INFO  2024-12-29T13:00:10,271 (?.:) - Data source 'Water_Tank' initialized 
+INFO  2024-12-29T13:00:10,296 (?.:) - Data point 'Water_Tank - Temp - The Temperature of the water' initialized 
+INFO  2024-12-29T13:00:10,298 (?.:) - Data point 'Water_Tank - Quality - Quality of water in tank' initialized 
+INFO  2024-12-29T13:00:10,299 (?.:) - Data point 'Water_Tank - Size - Amount of Water left in tank' initialized 
+INFO  2024-12-29T13:00:10,315 (?.:) - Quartz - job-DataSourcePointsCache scheduled, Trigger 'DEFAULT.Quartz - trigger-DataSourcePointsCache':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: Sun Dec 29 13:01:00 UTC 2024 
+INFO  2024-12-29T13:00:10,335 (?.:) - Cache point hierarchy initialized 
+INFO  2024-12-29T13:00:10,338 (?.:) - Cache views initialized 
+INFO  2024-12-29T13:00:10,348 (?.:) - Cache views hierarchy initialized 
+INFO  2024-12-29T13:00:10,348 (?.:) - Quartz - job-EverySecond scheduled, Trigger 'DEFAULT.Quartz - trigger-EverySecondTrigger':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: Sun Dec 29 13:00:08 UTC 2024 
+INFO  2024-12-29T13:00:10,348 (?.:) - Quartz EverySecond initialized 
+INFO  2024-12-29T13:00:10,348 (?.:) - Scada-LTS context started 
+INFO  2024-12-29T13:56:24,050 (?.:) - Quartz - job-UpdatePendingEvents scheduled, Trigger 'DEFAULT.Quartz - trigger-UpdatePendingEvents':  triggerClass: 'org.quartz.SimpleTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: Sun Dec 29 13:58:04 UTC 2024 
+INFO  2024-12-29T16:00:00,031 (?.:) - ResetCacheHighestAlarmLevel executed in [20] ms 
+INFO  2024-12-29T19:01:13,843 (?.:) - ResetCacheHighestAlarmLevel executed in [5] ms 
+INFO  2024-12-29T22:10:58,294 (?.:) - ResetCacheHighestAlarmLevel executed in [4] ms 
+INFO  2024-12-30T01:02:41,433 (?.:) - ResetCacheHighestAlarmLevel executed in [2] ms 
+INFO  2024-12-30T04:03:56,189 (?.:) - ResetCacheHighestAlarmLevel executed in [4] ms 
+INFO  2024-12-30T07:02:03,676 (?.:) - ResetCacheHighestAlarmLevel executed in [3] ms 
+INFO  2024-12-30T10:15:44,375 (?.:) - ResetCacheHighestAlarmLevel executed in [2] ms 
+INFO  2024-12-30T13:09:26,657 (?.:) - ResetCacheHighestAlarmLevel executed in [3] ms 
+INFO  2024-12-30T16:02:41,609 (?.:) - ResetCacheHighestAlarmLevel executed in [2] ms 
+INFO  2024-12-30T16:14:41,952 (?.:) - Scada-LTS context terminating 
+ERROR 2024-12-30T16:14:42,001 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-12-30T16:14:42,002 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-12-30T16:14:42,002 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-12-30T16:14:42,002 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-12-30T16:14:42,002 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-12-30T16:14:42,002 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-12-30T16:14:42,002 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-12-30T16:14:42,002 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-12-30T16:14:42,003 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-12-30T16:14:42,003 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-12-30T16:14:42,003 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-12-30T16:14:42,003 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+INFO  2024-12-30T16:14:42,036 (?.:) - Quartz - job-UpdatePendingEvents stopped, DEFAULT.Quartz - job-UpdatePendingEvents 
+INFO  2024-12-30T16:14:42,037 (?.:) - Quartz - job-DataSourcePointsCache stopped, DEFAULT.Quartz - job-DataSourcePointsCache 
+INFO  2024-12-30T16:14:42,037 (?.:) - Quartz - job-EverySecond stopped, DEFAULT.Quartz - job-EverySecond 
+INFO  2024-12-30T16:14:42,037 (?.:) - Quartz - job-ResetCacheHighestAlarmLevel stopped, DEFAULT.Quartz - job-ResetCacheHighestAlarmLevel 
+INFO  2024-12-30T16:14:42,037 (?.:) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down. 
+INFO  2024-12-30T16:14:42,037 (?.:) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused. 
+INFO  2024-12-30T16:14:42,038 (?.:) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete. 
+ERROR 2024-12-30T16:14:42,310 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-12-30T16:14:42,311 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-12-30T16:14:42,312 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-12-30T16:14:42,312 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-12-30T16:14:42,313 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-12-30T16:14:42,313 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-12-30T16:14:42,314 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-12-30T16:14:42,315 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; Server shutdown in progress; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Server shutdown in progress 
+ERROR 2024-12-30T16:14:42,316 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-12-30T16:14:42,316 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-12-30T16:14:42,316 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-12-30T16:14:42,316 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-12-30T16:14:42,316 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-12-30T16:14:42,319 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; Server shutdown in progress; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Server shutdown in progress 
+ERROR 2024-12-30T16:14:42,320 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+ERROR 2024-12-30T16:14:42,317 (?.:) - Error saving 3 batch inserts. Data lost. 
+org.springframework.dao.DataAccessResourceFailureException: PreparedStatementCallback; SQL [insert pointValues (dataPointId,dataType,pointValue,ts) values (?,?,?,?)]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:79) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:82) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:655) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:668) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.batchUpdate(JdbcTemplate.java:956) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.BatchUpdateUtils.executeBatchUpdate(BatchUpdateUtils.java:35) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.batchUpdate(JdbcTemplate.java:1006) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.batchUpdate(JdbcTemplate.java:1001) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.scada_lts.dao.pointvalues.PointValueDAO.executeBatchUpdateInsert(PointValueDAO.java:505) ~[classes/:?]
+	at org.scada_lts.mango.service.PointValueService$BatchWriteBehind.work(PointValueService.java:578) [classes/:?]
+	at com.serotonin.mango.rt.maint.work.AbstractBeforeAfterWorkItem.execute(AbstractBeforeAfterWorkItem.java:167) [classes/:?]
+	at com.serotonin.mango.rt.maint.BackgroundProcessing$1.run(BackgroundProcessing.java:61) [classes/:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:?]
+	at java.lang.Thread.run(Unknown Source) [?:?]
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at jdk.internal.reflect.GeneratedConstructorAccessor109.newInstance(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:?]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.Util.getInstance(Util.java:386) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:919) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:861) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.ConnectionImpl.throwConnectionClosedException(ConnectionImpl.java:1182) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1177) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:4037) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:4006) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at jdk.internal.reflect.GeneratedMethodAccessor129.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at org.apache.tomcat.jdbc.pool.ProxyConnection.invoke(ProxyConnection.java:131) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:107) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.AbstractCreateStatementInterceptor.invoke(AbstractCreateStatementInterceptor.java:70) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:107) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.AbstractCreateStatementInterceptor.invoke(AbstractCreateStatementInterceptor.java:70) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.ResetAbandonedTimer.invoke(ResetAbandonedTimer.java:74) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:107) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.AbstractCreateStatementInterceptor.invoke(AbstractCreateStatementInterceptor.java:70) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:107) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.ConnectionState.invoke(ConnectionState.java:159) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:107) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.TrapException.invoke(TrapException.java:39) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:107) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.AbstractCreateStatementInterceptor.invoke(AbstractCreateStatementInterceptor.java:70) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.JdbcInterceptor.invoke(JdbcInterceptor.java:107) ~[tomcat-jdbc.jar:?]
+	at org.apache.tomcat.jdbc.pool.DisposableConnectionFacade.invoke(DisposableConnectionFacade.java:81) ~[tomcat-jdbc.jar:?]
+	at com.sun.proxy.$Proxy77.prepareStatement(Unknown Source) ~[?:?]
+	at org.springframework.jdbc.core.JdbcTemplate$SimplePreparedStatementCreator.createPreparedStatement(JdbcTemplate.java:1530) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:633) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	... 12 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Server shutdown in progress
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:?]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:403) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.Util.getInstance(Util.java:386) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:919) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2524) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2675) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1915) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2023) ~[mysql-connector-java-5.1.49.jar:5.1.49]
+	at jdk.internal.reflect.GeneratedMethodAccessor128.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.AbstractQueryReport$StatementProxy.invoke(AbstractQueryReport.java:214) ~[tomcat-jdbc.jar:?]
+	at com.sun.proxy.$Proxy121.executeQuery(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor128.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at org.apache.tomcat.jdbc.pool.interceptor.AbstractQueryReport$StatementProxy.invoke(AbstractQueryReport.java:214) ~[tomcat-jdbc.jar:?]
+	at com.sun.proxy.$Proxy121.executeQuery(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.GeneratedMethodAccessor128.invoke(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:?]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:?]
+	at org.apache.tomcat.jdbc.pool.StatementFacade$StatementProxy.invoke(StatementFacade.java:118) ~[tomcat-jdbc.jar:?]
+	at com.sun.proxy.$Proxy121.executeQuery(Unknown Source) ~[?:?]
+	at org.springframework.jdbc.core.JdbcTemplate$1.doInPreparedStatement(JdbcTemplate.java:698) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:639) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:690) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:722) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:732) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:782) ~[spring-jdbc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.scada_lts.dao.event.EventDAO.getEventHandlers(EventDAO.java:1303) ~[classes/:?]
+	at org.scada_lts.mango.service.EventService.getEventHandlers(EventService.java:360) ~[classes/:?]
+	at com.serotonin.mango.rt.EventManager.setHandlers(EventManager.java:385) ~[classes/:?]
+	at com.serotonin.mango.rt.EventManager.raiseEvent(EventManager.java:115) ~[classes/:?]
+	at com.serotonin.mango.rt.EventManager.raiseEvent(EventManager.java:72) ~[classes/:?]
+	at com.serotonin.mango.rt.event.type.SystemEventType.raiseEvent(SystemEventType.java:150) ~[classes/:?]
+	at com.serotonin.mango.MangoContextListener.contextDestroyed(MangoContextListener.java:207) ~[classes/:?]
+	at org.scada_lts.web.beans.ScadaContextClosedEvent.onApplicationEvent(ScadaContextClosedEvent.java:24) ~[classes/:?]
+	at org.scada_lts.web.beans.ScadaContextClosedEvent.onApplicationEvent(ScadaContextClosedEvent.java:11) ~[classes/:?]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:393) ~[spring-context-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:347) ~[spring-context-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:991) ~[spring-context-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:958) ~[spring-context-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.destroy(FrameworkServlet.java:829) ~[spring-webmvc-4.3.16.RELEASE.jar:4.3.16.RELEASE]
+	at org.apache.catalina.core.StandardWrapper.unload(StandardWrapper.java:1258) ~[catalina.jar:9.0.86]
+	at org.apache.catalina.core.StandardWrapper.stopInternal(StandardWrapper.java:1544) ~[catalina.jar:9.0.86]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242) ~[catalina.jar:9.0.86]
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5135) ~[catalina.jar:9.0.86]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242) ~[catalina.jar:9.0.86]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1348) ~[catalina.jar:9.0.86]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1337) ~[catalina.jar:9.0.86]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[?:?]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-util.jar:9.0.86]
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source) ~[?:?]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:931) ~[catalina.jar:9.0.86]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242) ~[catalina.jar:9.0.86]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1348) ~[catalina.jar:9.0.86]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1337) ~[catalina.jar:9.0.86]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[?:?]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-util.jar:9.0.86]
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source) ~[?:?]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:931) ~[catalina.jar:9.0.86]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242) ~[catalina.jar:9.0.86]
+	at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:496) ~[catalina.jar:9.0.86]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242) ~[catalina.jar:9.0.86]
+	at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:978) ~[catalina.jar:9.0.86]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242) ~[catalina.jar:9.0.86]
+	at org.apache.catalina.startup.Catalina.stop(Catalina.java:810) ~[catalina.jar:9.0.86]
+	at org.apache.catalina.startup.Catalina$CatalinaShutdownHook.run(Catalina.java:955) ~[catalina.jar:9.0.86]
+ERROR 2024-12-30T16:14:42,344 (?.:) - PreparedStatementCallback; SQL [select settingValue from systemSettings where settingName=? ]; No operations allowed after connection closed.; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed. 
+INFO  2025-01-17T16:11:35,622 (?.:) - Job execution threads will use class loader of thread: main 
+INFO  2025-01-17T16:11:35,630 (?.:) - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl 
+INFO  2025-01-17T16:11:35,630 (?.:) - Quartz Scheduler v.1.6.3 created. 
+INFO  2025-01-17T16:11:35,631 (?.:) - RAMJobStore initialized. 
+INFO  2025-01-17T16:11:35,631 (?.:) - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties' 
+INFO  2025-01-17T16:11:35,631 (?.:) - Quartz scheduler version: 1.6.3 
+INFO  2025-01-17T16:11:35,634 (?.:) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started. 
+INFO  2025-01-17T16:11:35,648 (?.:) - Initializing pooled connection manager 
+INFO  2025-01-17T16:11:35,649 (?.:) - Looking for Datasource: java:comp/env/jdbc/scadalts 
+INFO  2025-01-17T16:11:35,652 (?.:) - DataSource meta: MySQL 8.0.32 
+INFO  2025-01-17T16:11:36,980 (?.:) - Scada-LTS context starting at: 1737130296980 
+INFO  2025-01-17T16:11:36,990 (?.:) - 
+**************************************************
+*             Welcome to Scada-LTS!              *
+**************************************************
+* Version: v2.7.8
+* Build: 9871735523
+* Powered by: Scada-LTS team
+ 
+INFO  2025-01-17T16:11:37,275 (?.:) - schemaExist:true 
+INFO  2025-01-17T16:11:37,277 (?.:) - BaseLineNotExist:false 
+WARN  2025-01-17T16:11:37,282 (?.:) - Use of dots (.) as path separators will be deprecated in Flyway 7. Path: org.scada_lts.dao.migration.mysql 
+INFO  2025-01-17T16:11:37,284 (?.:) - Flyway Community Edition 6.5.5 by Redgate 
+INFO  2025-01-17T16:11:37,332 (?.:) - Database: jdbc:mysql://database:3306/scadalts (MySQL 8.0) 
+INFO  2025-01-17T16:11:37,357 (?.:) - Successfully validated 30 migrations (execution time 00:00.009s) 
+INFO  2025-01-17T16:11:37,360 (?.:) - Current version of schema `scadalts`: 2.7.7.1 
+INFO  2025-01-17T16:11:37,360 (?.:) - Schema `scadalts` is up to date. No migration necessary. 
+INFO  2025-01-17T16:11:37,364 (?.:) - Quartz - job-ResetCacheHighestAlarmLevel scheduled, Trigger 'DEFAULT.Quartz - trigger-ResetCacheHighestAlarmLevel':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: Fri Jan 17 19:00:00 UTC 2025 
+INFO  2025-01-17T16:11:37,430 (?.:) - Cache event detectors initialized 
+INFO  2025-01-17T16:11:37,431 (?.:) - Cache data points initialized 
+INFO  2025-01-17T16:11:37,462 (?.:) - Data source 'Water_Tank' initialized 
+INFO  2025-01-17T16:11:37,487 (?.:) - Data point 'Water_Tank - Temp - The Temperature of the water' initialized 
+INFO  2025-01-17T16:11:37,488 (?.:) - Data point 'Water_Tank - Quality - Quality of water in tank' initialized 
+INFO  2025-01-17T16:11:37,489 (?.:) - Data point 'Water_Tank - Size - Amount of Water left in tank' initialized 
+INFO  2025-01-17T16:11:37,503 (?.:) - Quartz - job-DataSourcePointsCache scheduled, Trigger 'DEFAULT.Quartz - trigger-DataSourcePointsCache':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: Fri Jan 17 16:12:00 UTC 2025 
+INFO  2025-01-17T16:11:37,522 (?.:) - Cache point hierarchy initialized 
+INFO  2025-01-17T16:11:37,525 (?.:) - Cache views initialized 
+INFO  2025-01-17T16:11:37,540 (?.:) - Cache views hierarchy initialized 
+INFO  2025-01-17T16:11:37,540 (?.:) - Quartz - job-EverySecond scheduled, Trigger 'DEFAULT.Quartz - trigger-EverySecondTrigger':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: Fri Jan 17 16:11:35 UTC 2025 
+INFO  2025-01-17T16:11:37,541 (?.:) - Quartz EverySecond initialized 
+INFO  2025-01-17T16:11:37,541 (?.:) - Scada-LTS context started 
+INFO  2025-01-17T16:12:00,016 (?.:) - Data point 'Water_Tank - Temp - The Temperature of the water' stopped 
+INFO  2025-01-17T16:12:00,017 (?.:) - Data point 'Water_Tank - Quality - Quality of water in tank' stopped 
+INFO  2025-01-17T16:12:00,017 (?.:) - Data point 'Water_Tank - Size - Amount of Water left in tank' stopped 
+INFO  2025-01-17T16:12:00,017 (?.:) - Data source 'Water_Tank' stopped 
+INFO  2025-01-17T16:12:21,202 (?.:) - Data point 'Water_Tank - Temp - The Temperature of the water' initialized 
+INFO  2025-01-17T16:12:21,204 (?.:) - Data point 'Water_Tank - Quality - Quality of water in tank' initialized 
+INFO  2025-01-17T16:12:21,205 (?.:) - Data point 'Water_Tank - Size - Amount of Water left in tank' initialized 
+INFO  2025-01-17T16:12:21,206 (?.:) - Data source 'Water_Tank' initialized 
+INFO  2025-01-17T16:12:25,767 (?.:) - Quartz - job-UpdatePendingEvents scheduled, Trigger 'DEFAULT.Quartz - trigger-UpdatePendingEvents':  triggerClass: 'org.quartz.SimpleTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: Fri Jan 17 16:14:05 UTC 2025 
