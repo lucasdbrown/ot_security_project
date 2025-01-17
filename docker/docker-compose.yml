@@ -7,7 +7,7 @@ services:
         container_name: mysql
         image: mysql/mysql-server:8.0.32
         ports:
-            - "3307:3306"
+            - "0.0.0.0:3307:3306"
         environment: 
             - MYSQL_ROOT_PASSWORD=root
             - MYSQL_USER=root
@@ -26,7 +26,7 @@ services:
         environment:
             - CATALINA_OPTS=-Xmx2G -Xms2G
         ports: 
-            - "8080:8080"
+            - "0.0.0.0:8080:8080"
         depends_on: 
             - database
         expose: ["8080", "8000"]
@@ -49,7 +49,7 @@ services:
     mqtt:
         image: hivemq/hivemq4:latest
         ports:
-            - "8081:8080"
+            - "0.0.0.0:8081:8080"
             - "1883:1883"
         expose: [ "8081", "1883" ]
         networks:
@@ -60,7 +60,7 @@ services:
             context: ./components
             dockerfile: Dockerfile
         ports:
-            - "502:502"
+            - "0.0.0.0:502:502"
         volumes:
             - ./components:/usr/src/app
         networks:

@@ -1206,3 +1206,111 @@ INFO  2025-01-17T17:46:23,121 (?.:) - Quartz - job-ResetCacheHighestAlarmLevel s
 INFO  2025-01-17T17:46:23,121 (?.:) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down. 
 INFO  2025-01-17T17:46:23,121 (?.:) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused. 
 INFO  2025-01-17T17:46:23,122 (?.:) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete. 
+INFO  2025-01-17T17:49:53,260 (?.:) - Job execution threads will use class loader of thread: main 
+INFO  2025-01-17T17:49:53,268 (?.:) - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl 
+INFO  2025-01-17T17:49:53,268 (?.:) - Quartz Scheduler v.1.6.3 created. 
+INFO  2025-01-17T17:49:53,268 (?.:) - RAMJobStore initialized. 
+INFO  2025-01-17T17:49:53,268 (?.:) - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties' 
+INFO  2025-01-17T17:49:53,269 (?.:) - Quartz scheduler version: 1.6.3 
+INFO  2025-01-17T17:49:53,272 (?.:) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started. 
+INFO  2025-01-17T17:49:53,284 (?.:) - Initializing pooled connection manager 
+INFO  2025-01-17T17:49:53,285 (?.:) - Looking for Datasource: java:comp/env/jdbc/scadalts 
+INFO  2025-01-17T17:49:53,288 (?.:) - DataSource meta: MySQL 8.0.32 
+INFO  2025-01-17T17:49:54,359 (?.:) - Scada-LTS context starting at: 1737136194359 
+INFO  2025-01-17T17:49:54,366 (?.:) - 
+**************************************************
+*             Welcome to Scada-LTS!              *
+**************************************************
+* Version: v2.7.8
+* Build: 9871735523
+* Powered by: Scada-LTS team
+ 
+INFO  2025-01-17T17:49:54,611 (?.:) - schemaExist:true 
+INFO  2025-01-17T17:49:54,614 (?.:) - BaseLineNotExist:false 
+WARN  2025-01-17T17:49:54,618 (?.:) - Use of dots (.) as path separators will be deprecated in Flyway 7. Path: org.scada_lts.dao.migration.mysql 
+INFO  2025-01-17T17:49:54,620 (?.:) - Flyway Community Edition 6.5.5 by Redgate 
+INFO  2025-01-17T17:49:54,673 (?.:) - Database: jdbc:mysql://database:3306/scadalts (MySQL 8.0) 
+INFO  2025-01-17T17:49:54,697 (?.:) - Successfully validated 30 migrations (execution time 00:00.009s) 
+INFO  2025-01-17T17:49:54,701 (?.:) - Current version of schema `scadalts`: 2.7.7.1 
+INFO  2025-01-17T17:49:54,701 (?.:) - Schema `scadalts` is up to date. No migration necessary. 
+INFO  2025-01-17T17:49:54,705 (?.:) - Quartz - job-ResetCacheHighestAlarmLevel scheduled, Trigger 'DEFAULT.Quartz - trigger-ResetCacheHighestAlarmLevel':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: Fri Jan 17 19:00:00 UTC 2025 
+INFO  2025-01-17T17:49:54,767 (?.:) - Cache event detectors initialized 
+INFO  2025-01-17T17:49:54,770 (?.:) - Cache data points initialized 
+INFO  2025-01-17T17:49:54,801 (?.:) - Data source 'Water_Tank' initialized 
+INFO  2025-01-17T17:49:54,827 (?.:) - Data point 'Water_Tank - Temp - The Temperature of the water' initialized 
+INFO  2025-01-17T17:49:54,830 (?.:) - Data point 'Water_Tank - Quality - Quality of water in tank' initialized 
+INFO  2025-01-17T17:49:54,831 (?.:) - Data point 'Water_Tank - Size - Amount of Water left in tank' initialized 
+INFO  2025-01-17T17:49:54,852 (?.:) - Quartz - job-DataSourcePointsCache scheduled, Trigger 'DEFAULT.Quartz - trigger-DataSourcePointsCache':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: Fri Jan 17 17:50:00 UTC 2025 
+INFO  2025-01-17T17:49:54,875 (?.:) - Cache point hierarchy initialized 
+INFO  2025-01-17T17:49:54,877 (?.:) - Cache views initialized 
+INFO  2025-01-17T17:49:54,884 (?.:) - Cache views hierarchy initialized 
+INFO  2025-01-17T17:49:54,885 (?.:) - Quartz - job-EverySecond scheduled, Trigger 'DEFAULT.Quartz - trigger-EverySecondTrigger':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: Fri Jan 17 17:49:53 UTC 2025 
+INFO  2025-01-17T17:49:54,885 (?.:) - Quartz EverySecond initialized 
+INFO  2025-01-17T17:49:54,885 (?.:) - Scada-LTS context started 
+INFO  2025-01-17T18:46:26,917 (?.:) - Scada-LTS context terminating 
+INFO  2025-01-17T18:46:26,920 (?.:) - Stopping RuntimeManager 
+INFO  2025-01-17T18:46:26,922 (?.:) - Data point 'Water_Tank - Temp - The Temperature of the water' stopped 
+INFO  2025-01-17T18:46:26,924 (?.:) - Data point 'Water_Tank - Quality - Quality of water in tank' stopped 
+INFO  2025-01-17T18:46:26,924 (?.:) - Data point 'Water_Tank - Size - Amount of Water left in tank' stopped 
+INFO  2025-01-17T18:46:26,925 (?.:) - Data source 'Water_Tank' stopped 
+INFO  2025-01-17T18:46:26,925 (?.:) - Stopped RuntimeManager 
+INFO  2025-01-17T18:46:26,925 (?.:) - Stopping EventManager 
+INFO  2025-01-17T18:46:26,925 (?.:) - Stopped EventManager 
+INFO  2025-01-17T18:46:26,925 (?.:) - Stopping BackgroundProcessing 
+INFO  2025-01-17T18:46:26,925 (?.:) - Stopped MediumPriorityService 
+INFO  2025-01-17T18:46:26,925 (?.:) - Stopped LowPriorityService 
+INFO  2025-01-17T18:46:26,925 (?.:) - Stopped BackgroundProcessing 
+INFO  2025-01-17T18:46:26,925 (?.:) - Stopping RealTimeTimer 
+INFO  2025-01-17T18:46:26,925 (?.:) - Stopped RealTimeTimer 
+INFO  2025-01-17T18:46:26,926 (?.:) - Stopping database 
+INFO  2025-01-17T18:46:26,930 (?.:) - Unregistered jdbc driver: com.mysql.jdbc.Driver 
+INFO  2025-01-17T18:46:26,930 (?.:) - Unregistered jdbc driver: com.mysql.fabric.jdbc.FabricMySQLDriver 
+INFO  2025-01-17T18:46:26,931 (?.:) - Stopped database 
+INFO  2025-01-17T18:46:26,931 (?.:) - Scada-LTS context terminated 
+INFO  2025-01-17T18:46:26,999 (?.:) - Quartz - job-DataSourcePointsCache stopped, DEFAULT.Quartz - job-DataSourcePointsCache 
+INFO  2025-01-17T18:46:26,999 (?.:) - Quartz - job-EverySecond stopped, DEFAULT.Quartz - job-EverySecond 
+INFO  2025-01-17T18:46:26,999 (?.:) - Quartz - job-ResetCacheHighestAlarmLevel stopped, DEFAULT.Quartz - job-ResetCacheHighestAlarmLevel 
+INFO  2025-01-17T18:46:27,000 (?.:) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down. 
+INFO  2025-01-17T18:46:27,000 (?.:) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused. 
+INFO  2025-01-17T18:46:27,000 (?.:) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete. 
+INFO  2025-01-17T18:47:15,728 (?.:) - Job execution threads will use class loader of thread: main 
+INFO  2025-01-17T18:47:15,736 (?.:) - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl 
+INFO  2025-01-17T18:47:15,736 (?.:) - Quartz Scheduler v.1.6.3 created. 
+INFO  2025-01-17T18:47:15,736 (?.:) - RAMJobStore initialized. 
+INFO  2025-01-17T18:47:15,736 (?.:) - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties' 
+INFO  2025-01-17T18:47:15,737 (?.:) - Quartz scheduler version: 1.6.3 
+INFO  2025-01-17T18:47:15,740 (?.:) - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started. 
+INFO  2025-01-17T18:47:15,753 (?.:) - Initializing pooled connection manager 
+INFO  2025-01-17T18:47:15,753 (?.:) - Looking for Datasource: java:comp/env/jdbc/scadalts 
+INFO  2025-01-17T18:47:15,756 (?.:) - DataSource meta: MySQL 8.0.32 
+INFO  2025-01-17T18:47:16,919 (?.:) - Scada-LTS context starting at: 1737139636919 
+INFO  2025-01-17T18:47:16,930 (?.:) - 
+**************************************************
+*             Welcome to Scada-LTS!              *
+**************************************************
+* Version: v2.7.8
+* Build: 9871735523
+* Powered by: Scada-LTS team
+ 
+INFO  2025-01-17T18:47:17,184 (?.:) - schemaExist:true 
+INFO  2025-01-17T18:47:17,187 (?.:) - BaseLineNotExist:false 
+WARN  2025-01-17T18:47:17,192 (?.:) - Use of dots (.) as path separators will be deprecated in Flyway 7. Path: org.scada_lts.dao.migration.mysql 
+INFO  2025-01-17T18:47:17,195 (?.:) - Flyway Community Edition 6.5.5 by Redgate 
+INFO  2025-01-17T18:47:17,213 (?.:) - Database: jdbc:mysql://database:3306/scadalts (MySQL 8.0) 
+INFO  2025-01-17T18:47:17,271 (?.:) - Successfully validated 30 migrations (execution time 00:00.022s) 
+INFO  2025-01-17T18:47:17,275 (?.:) - Current version of schema `scadalts`: 2.7.7.1 
+INFO  2025-01-17T18:47:17,276 (?.:) - Schema `scadalts` is up to date. No migration necessary. 
+INFO  2025-01-17T18:47:17,279 (?.:) - Quartz - job-ResetCacheHighestAlarmLevel scheduled, Trigger 'DEFAULT.Quartz - trigger-ResetCacheHighestAlarmLevel':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: Fri Jan 17 19:00:00 UTC 2025 
+INFO  2025-01-17T18:47:17,344 (?.:) - Cache event detectors initialized 
+INFO  2025-01-17T18:47:17,345 (?.:) - Cache data points initialized 
+INFO  2025-01-17T18:47:17,379 (?.:) - Data source 'Water_Tank' initialized 
+INFO  2025-01-17T18:47:17,403 (?.:) - Data point 'Water_Tank - Temp - The Temperature of the water' initialized 
+INFO  2025-01-17T18:47:17,406 (?.:) - Data point 'Water_Tank - Quality - Quality of water in tank' initialized 
+INFO  2025-01-17T18:47:17,407 (?.:) - Data point 'Water_Tank - Size - Amount of Water left in tank' initialized 
+INFO  2025-01-17T18:47:17,424 (?.:) - Quartz - job-DataSourcePointsCache scheduled, Trigger 'DEFAULT.Quartz - trigger-DataSourcePointsCache':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: Fri Jan 17 18:48:00 UTC 2025 
+INFO  2025-01-17T18:47:17,444 (?.:) - Cache point hierarchy initialized 
+INFO  2025-01-17T18:47:17,449 (?.:) - Cache views initialized 
+INFO  2025-01-17T18:47:17,459 (?.:) - Cache views hierarchy initialized 
+INFO  2025-01-17T18:47:17,460 (?.:) - Quartz - job-EverySecond scheduled, Trigger 'DEFAULT.Quartz - trigger-EverySecondTrigger':  triggerClass: 'org.quartz.CronTrigger isVolatile: false calendar: 'null' misfireInstruction: 0 nextFireTime: Fri Jan 17 18:47:15 UTC 2025 
+INFO  2025-01-17T18:47:17,460 (?.:) - Quartz EverySecond initialized 
+INFO  2025-01-17T18:47:17,460 (?.:) - Scada-LTS context started 

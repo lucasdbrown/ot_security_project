@@ -1,15 +1,11 @@
-INFO  2025-01-17T17:45:24,820 (?.:) - Initializing pooled connection manager 
-INFO  2025-01-17T17:45:24,821 (?.:) - Looking for Datasource: java:comp/env/jdbc/scadalts 
-INFO  2025-01-17T17:45:24,824 (?.:) - DataSource meta: MySQL 8.0.32 
-INFO  2025-01-17T17:45:26,131 (?.:) - schemaExist:true 
-INFO  2025-01-17T17:45:26,134 (?.:) - BaseLineNotExist:false 
-WARN  2025-01-17T17:45:26,138 (?.:) - Use of dots (.) as path separators will be deprecated in Flyway 7. Path: org.scada_lts.dao.migration.mysql 
-INFO  2025-01-17T17:45:26,140 (?.:) - Flyway Community Edition 6.5.5 by Redgate 
-INFO  2025-01-17T17:45:26,156 (?.:) - Database: jdbc:mysql://database:3306/scadalts (MySQL 8.0) 
-INFO  2025-01-17T17:45:26,215 (?.:) - Successfully validated 30 migrations (execution time 00:00.014s) 
-INFO  2025-01-17T17:45:26,219 (?.:) - Current version of schema `scadalts`: 2.7.7.1 
-INFO  2025-01-17T17:45:26,220 (?.:) - Schema `scadalts` is up to date. No migration necessary. 
-INFO  2025-01-17T17:46:23,044 (?.:) - Stopping database 
-INFO  2025-01-17T17:46:23,049 (?.:) - Unregistered jdbc driver: com.mysql.jdbc.Driver 
-INFO  2025-01-17T17:46:23,049 (?.:) - Unregistered jdbc driver: com.mysql.fabric.jdbc.FabricMySQLDriver 
-INFO  2025-01-17T17:46:23,049 (?.:) - Stopped database 
+INFO  2025-01-17T18:47:15,753 (?.:) - Initializing pooled connection manager 
+INFO  2025-01-17T18:47:15,753 (?.:) - Looking for Datasource: java:comp/env/jdbc/scadalts 
+INFO  2025-01-17T18:47:15,756 (?.:) - DataSource meta: MySQL 8.0.32 
+INFO  2025-01-17T18:47:17,184 (?.:) - schemaExist:true 
+INFO  2025-01-17T18:47:17,187 (?.:) - BaseLineNotExist:false 
+WARN  2025-01-17T18:47:17,192 (?.:) - Use of dots (.) as path separators will be deprecated in Flyway 7. Path: org.scada_lts.dao.migration.mysql 
+INFO  2025-01-17T18:47:17,195 (?.:) - Flyway Community Edition 6.5.5 by Redgate 
+INFO  2025-01-17T18:47:17,213 (?.:) - Database: jdbc:mysql://database:3306/scadalts (MySQL 8.0) 
+INFO  2025-01-17T18:47:17,271 (?.:) - Successfully validated 30 migrations (execution time 00:00.022s) 
+INFO  2025-01-17T18:47:17,275 (?.:) - Current version of schema `scadalts`: 2.7.7.1 
+INFO  2025-01-17T18:47:17,276 (?.:) - Schema `scadalts` is up to date. No migration necessary. 
