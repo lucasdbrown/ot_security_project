@@ -1,11 +1,15 @@
-INFO  2025-01-17T17:14:28,087 (?.:) - Initializing pooled connection manager 
-INFO  2025-01-17T17:14:28,088 (?.:) - Looking for Datasource: java:comp/env/jdbc/scadalts 
-INFO  2025-01-17T17:14:28,091 (?.:) - DataSource meta: MySQL 8.0.32 
-INFO  2025-01-17T17:14:29,545 (?.:) - schemaExist:true 
-INFO  2025-01-17T17:14:29,547 (?.:) - BaseLineNotExist:false 
-WARN  2025-01-17T17:14:29,552 (?.:) - Use of dots (.) as path separators will be deprecated in Flyway 7. Path: org.scada_lts.dao.migration.mysql 
-INFO  2025-01-17T17:14:29,555 (?.:) - Flyway Community Edition 6.5.5 by Redgate 
-INFO  2025-01-17T17:14:29,589 (?.:) - Database: jdbc:mysql://database:3306/scadalts (MySQL 8.0) 
-INFO  2025-01-17T17:14:29,616 (?.:) - Successfully validated 30 migrations (execution time 00:00.008s) 
-INFO  2025-01-17T17:14:29,619 (?.:) - Current version of schema `scadalts`: 2.7.7.1 
-INFO  2025-01-17T17:14:29,620 (?.:) - Schema `scadalts` is up to date. No migration necessary. 
+INFO  2025-01-17T17:45:24,820 (?.:) - Initializing pooled connection manager 
+INFO  2025-01-17T17:45:24,821 (?.:) - Looking for Datasource: java:comp/env/jdbc/scadalts 
+INFO  2025-01-17T17:45:24,824 (?.:) - DataSource meta: MySQL 8.0.32 
+INFO  2025-01-17T17:45:26,131 (?.:) - schemaExist:true 
+INFO  2025-01-17T17:45:26,134 (?.:) - BaseLineNotExist:false 
+WARN  2025-01-17T17:45:26,138 (?.:) - Use of dots (.) as path separators will be deprecated in Flyway 7. Path: org.scada_lts.dao.migration.mysql 
+INFO  2025-01-17T17:45:26,140 (?.:) - Flyway Community Edition 6.5.5 by Redgate 
+INFO  2025-01-17T17:45:26,156 (?.:) - Database: jdbc:mysql://database:3306/scadalts (MySQL 8.0) 
+INFO  2025-01-17T17:45:26,215 (?.:) - Successfully validated 30 migrations (execution time 00:00.014s) 
+INFO  2025-01-17T17:45:26,219 (?.:) - Current version of schema `scadalts`: 2.7.7.1 
+INFO  2025-01-17T17:45:26,220 (?.:) - Schema `scadalts` is up to date. No migration necessary. 
+INFO  2025-01-17T17:46:23,044 (?.:) - Stopping database 
+INFO  2025-01-17T17:46:23,049 (?.:) - Unregistered jdbc driver: com.mysql.jdbc.Driver 
+INFO  2025-01-17T17:46:23,049 (?.:) - Unregistered jdbc driver: com.mysql.fabric.jdbc.FabricMySQLDriver 
+INFO  2025-01-17T17:46:23,049 (?.:) - Stopped database 
