@@ -1566,3 +1566,7 @@
 172.18.0.1 - - [17/Jan/2025:17:42:39 +0000] "GET /Scada-LTS/api/reports/instances HTTP/1.1" 200 12
 172.18.0.1 - - [17/Jan/2025:17:42:40 +0000] "GET /Scada-LTS/api/events/highestUnsilencedLevelAlarm HTTP/1.1" 200 11
 172.18.0.1 - - [17/Jan/2025:17:42:40 +0000] "GET /Scada-LTS/api/events/highestUnsilencedLevelAlarm HTTP/1.1" 200 11
+172.18.0.1 - - [17/Jan/2025:17:42:47 +0000] "GET /Scada-LTS/api/events/highestUnsilencedLevelAlarm HTTP/1.1" 200 11
+172.18.0.1 - - [17/Jan/2025:17:42:56 +0000] "GET /Scada-LTS/api/events/highestUnsilencedLevelAlarm HTTP/1.1" 200 11
+172.18.0.1 - - [17/Jan/2025:17:42:59 +0000] "GET /Scada-LTS/api/events/highestUnsilencedLevelAlarm HTTP/1.1" 200 11
+172.18.0.1 - - [17/Jan/2025:17:43:39 +0000] "GET /Scada-LTS/api/reports/instances HTTP/1.1" 200 12
