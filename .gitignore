@@ -5,4 +5,3 @@
 docker/db_conf/
 docker/db_data/
 docker/tomcat_log/
-docker/docker/
