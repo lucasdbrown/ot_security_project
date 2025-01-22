@@ -1,15 +1,51 @@
-INFO  2025-01-17T18:47:15,753 (?.:) - Initializing pooled connection manager 
-INFO  2025-01-17T18:47:15,753 (?.:) - Looking for Datasource: java:comp/env/jdbc/scadalts 
-INFO  2025-01-17T18:47:15,756 (?.:) - DataSource meta: MySQL 8.0.32 
-INFO  2025-01-17T18:47:17,184 (?.:) - schemaExist:true 
-INFO  2025-01-17T18:47:17,187 (?.:) - BaseLineNotExist:false 
-WARN  2025-01-17T18:47:17,192 (?.:) - Use of dots (.) as path separators will be deprecated in Flyway 7. Path: org.scada_lts.dao.migration.mysql 
-INFO  2025-01-17T18:47:17,195 (?.:) - Flyway Community Edition 6.5.5 by Redgate 
-INFO  2025-01-17T18:47:17,213 (?.:) - Database: jdbc:mysql://database:3306/scadalts (MySQL 8.0) 
-INFO  2025-01-17T18:47:17,271 (?.:) - Successfully validated 30 migrations (execution time 00:00.022s) 
-INFO  2025-01-17T18:47:17,275 (?.:) - Current version of schema `scadalts`: 2.7.7.1 
-INFO  2025-01-17T18:47:17,276 (?.:) - Schema `scadalts` is up to date. No migration necessary. 
-INFO  2025-01-17T18:50:22,035 (?.:) - Stopping database 
-INFO  2025-01-17T18:50:22,039 (?.:) - Unregistered jdbc driver: com.mysql.jdbc.Driver 
-INFO  2025-01-17T18:50:22,039 (?.:) - Unregistered jdbc driver: com.mysql.fabric.jdbc.FabricMySQLDriver 
-INFO  2025-01-17T18:50:22,039 (?.:) - Stopped database 
+INFO  2025-01-21T03:39:24,816 (?.:) - Initializing pooled connection manager 
+INFO  2025-01-21T03:39:24,816 (?.:) - Looking for Datasource: java:comp/env/jdbc/scadalts 
+INFO  2025-01-21T03:39:24,823 (?.:) - DataSource meta: MySQL 8.0.32 
+INFO  2025-01-21T03:39:27,692 (?.:) - schemaExist:false 
+INFO  2025-01-21T03:39:27,694 (?.:) - BaseLineNotExist:true 
+WARN  2025-01-21T03:39:27,739 (?.:) - Use of dots (.) as path separators will be deprecated in Flyway 7. Path: org.scada_lts.dao.migration.mysql 
+INFO  2025-01-21T03:39:27,749 (?.:) - Flyway Community Edition 6.5.5 by Redgate 
+INFO  2025-01-21T03:39:27,793 (?.:) - Database: jdbc:mysql://database:3306/scadalts (MySQL 8.0) 
+INFO  2025-01-21T03:39:27,849 (?.:) - Successfully validated 30 migrations (execution time 00:00.016s) 
+INFO  2025-01-21T03:39:27,866 (?.:) - Creating Schema History table `scadalts`.`schema_version` ... 
+INFO  2025-01-21T03:39:27,982 (?.:) - Current version of schema `scadalts`: << Empty Schema >> 
+INFO  2025-01-21T03:39:27,985 (?.:) - Migrating schema `scadalts` to version 1 - BaseVersion 
+INFO  2025-01-21T03:39:38,056 (?.:) - Migrating schema `scadalts` to version 1.1 - ViewsHierarchy 
+INFO  2025-01-21T03:39:38,296 (?.:) - Migrating schema `scadalts` to version 1.2 - SetViewSizeProperties 
+INFO  2025-01-21T03:39:38,330 (?.:) - Migrating schema `scadalts` to version 1.3 - SetXidPointHierarchy 
+INFO  2025-01-21T03:39:38,418 (?.:) - Migrating schema `scadalts` to version 2.0 - CMP history 
+INFO  2025-01-21T03:39:38,514 (?.:) - Migrating schema `scadalts` to version 2.3 - FaultsAndAlarms 
+WARN  2025-01-21T03:39:38,538 (?.:) - org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [ALTER TABLE dataPoints DROP COLUMN pointName;]; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'pointName'; check that column/key exists 
+WARN  2025-01-21T03:39:38,550 (?.:) - org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [ALTER TABLE dataPoints DROP COLUMN plcAlarmLevel;]; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Can't DROP 'plcAlarmLevel'; check that column/key exists 
+INFO  2025-01-21T03:39:38,770 (?.:) - Migrating schema `scadalts` to version 2.4 
+INFO  2025-01-21T03:39:38,808 (?.:) - Migrating schema `scadalts` to version 2.5 - ScheduledExecuteInactiveEvent 
+INFO  2025-01-21T03:39:39,036 (?.:) - Migrating schema `scadalts` to version 2.6 
+INFO  2025-01-21T03:39:39,084 (?.:) - Migrating schema `scadalts` to version 2.6.5.0 - ZIndexForViewComponent 
+INFO  2025-01-21T03:39:39,096 (?.:) - Migrating schema `scadalts` to version 2.7.0.1 - UserParameters 
+INFO  2025-01-21T03:39:39,139 (?.:) - Migrating schema `scadalts` to version 2.7.0.2 - FixViewPermissions 
+INFO  2025-01-21T03:39:39,161 (?.:) - Migrating schema `scadalts` to version 2.7.0.3 - AnonymousUser 
+INFO  2025-01-21T03:39:39,179 (?.:) - Migrating schema `scadalts` to version 2.7.0.4 - ExtendedDelayForMetaDatapoints 
+INFO  2025-01-21T03:39:39,191 (?.:) - Migrating schema `scadalts` to version 2.7.0.4.1 - CorrectProcedurePrcAlarmsNotify 
+INFO  2025-01-21T03:39:39,216 (?.:) - Migrating schema `scadalts` to version 2.7.0.4.2 - MultiChangeHistory 
+INFO  2025-01-21T03:39:39,385 (?.:) - Migrating schema `scadalts` to version 2.7.0.5 - SynopticPanel 
+INFO  2025-01-21T03:39:39,437 (?.:) - Migrating schema `scadalts` to version 2.7.1.0 - UserNames 
+INFO  2025-01-21T03:39:39,478 (?.:) - Migrating schema `scadalts` to version 2.7.1.1 - HttpRetriever 
+INFO  2025-01-21T03:39:39,493 (?.:) - Migrating schema `scadalts` to version 2.7.1.2 - PurgeLimitStrategyDatapointProperty 
+INFO  2025-01-21T03:39:39,506 (?.:) - Migrating schema `scadalts` to version 2.7.1.3 - ExportImportReport 
+INFO  2025-01-21T03:39:39,536 (?.:) - Migrating schema `scadalts` to version 2.7.2.1 - MqttPointLocatorUpdateDataPointXid 
+INFO  2025-01-21T03:39:39,548 (?.:) - Migrating schema `scadalts` to version 2.7.3.0 - SqlDataSourceUpdate 
+INFO  2025-01-21T03:39:39,563 (?.:) - Migrating schema `scadalts` to version 2.7.4.1 - AddSoapServicesUser 
+INFO  2025-01-21T03:39:39,583 (?.:) - Migrating schema `scadalts` to version 2.7.5.3 - AddLangToUser 
+INFO  2025-01-21T03:39:39,627 (?.:) - Migrating schema `scadalts` to version 2.7.5.3.1 - AddHttpdsUser 
+INFO  2025-01-21T03:39:39,641 (?.:) - Migrating schema `scadalts` to version 2.7.5.3.2 - AddFullScreenToUser 
+INFO  2025-01-21T03:39:39,718 (?.:) - Migrating schema `scadalts` to version 2.7.5.4.1 - UpdateAbsoluteToRelativeUrlInLinkComponent 
+INFO  2025-01-21T03:39:39,730 (?.:) - Migrating schema `scadalts` to version 2.7.6.1 - ChangeLengthLimitForSettingName 
+INFO  2025-01-21T03:39:39,839 (?.:) - Migrating schema `scadalts` to version 2.7.7.1 - SqlDataSourceLimit 
+INFO  2025-01-21T03:39:39,854 (?.:) - Successfully applied 30 migrations to schema `scadalts` (execution time 00:11.874s) 
+INFO  2025-01-21T03:39:39,866 (?.:) - Successfully validated 30 migrations (execution time 00:00.003s) 
+INFO  2025-01-21T03:39:39,870 (?.:) - Current version of schema `scadalts`: 2.7.7.1 
+INFO  2025-01-21T03:39:39,871 (?.:) - Schema `scadalts` is up to date. No migration necessary. 
+INFO  2025-01-21T04:06:07,770 (?.:) - Stopping database 
+INFO  2025-01-21T04:06:07,780 (?.:) - Unregistered jdbc driver: com.mysql.jdbc.Driver 
+INFO  2025-01-21T04:06:07,780 (?.:) - Unregistered jdbc driver: com.mysql.fabric.jdbc.FabricMySQLDriver 
+INFO  2025-01-21T04:06:07,780 (?.:) - Stopped database 

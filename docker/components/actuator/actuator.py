@@ -1,16 +1,20 @@
-from flask import Flask, request, jsonify
+import paho.mqtt.client as mqtt
 
-app = Flask(__name__)
+broker_address = "localhost"  # Change this if needed
+client = mqtt.Client("ActuatorNode")
 
-actuator_state = {"state": "OFF"}
+def on_message(client, userdata, message):
+    command = message.payload.decode("utf-8")
+    print(f"[Actuator] Received command: {command}")
+    
+    if command == "TURN_ON":
+        print("[Actuator] Activating system!")
+    elif command == "TURN_OFF":
+        print("[Actuator] Deactivating system!")
 
-@app.route('/actuator', methods=['GET', 'POST'])
-def actuator():
-    global actuator_state
-    if request.method == 'POST':
-        data = request.json
-        actuator_state["state"] = data.get("state", "OFF")
-    return jsonify(actuator_state)
+client.connect(broker_address, 1883, 60)
+client.subscribe("SCADA/Actuator/Control")
+client.on_message = on_message
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5001)
+print("[Actuator] Listening for control messages from SCADA-LTS...")
+client.loop_forever()

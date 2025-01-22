@@ -1,0 +1,30 @@
+{
+    "dataSources":[
+       {
+          "xid":"DS_248395",
+          "type":"MODBUS_IP",
+          "alarmLevels":{
+             "POINT_WRITE_EXCEPTION":"URGENT",
+             "DATA_SOURCE_EXCEPTION":"URGENT",
+             "POINT_READ_EXCEPTION":"URGENT"
+          },
+          "updatePeriodType":"MILLISECONDS",
+          "transportType":"TCP",
+          "contiguousBatches":true,
+          "createSlaveMonitorPoints":false,
+          "createSocketMonitorPoint":false,
+          "enabled":false,
+          "encapsulated":false,
+          "host":"localhost",
+          "maxReadBitCount":2000,
+          "maxReadRegisterCount":125,
+          "maxWriteRegisterCount":120,
+          "name":"PLC",
+          "port":5020,
+          "quantize":false,
+          "retries":3,
+          "timeout":5000,
+          "updatePeriods":5000
+       }
+    ]
+}
