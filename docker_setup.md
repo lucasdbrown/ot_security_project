@@ -6,7 +6,7 @@
 ## Setup
 - Install docker desktop (if not already)
 - In the directory with the `docker-compose.yml`
-- `docker-compose up`
+- `docker-compose up -v`
 
 #### To connnect to the terminal
 - `docker ps` for the name or id of the scadalts container
