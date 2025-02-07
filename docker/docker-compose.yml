@@ -59,10 +59,15 @@ services:
         build:
             context: ./components
             dockerfile: Dockerfile
+        working_dir: /components/components_startup.sh
+        entrypoint: ["/bin/sh", "-c", "./components_startup.sh"]
         ports:
-            - "0.0.0.0:502:502"
+            - "5020:5020"  # PLC Modbus Port
+            - "5000:5000"  # HMI Web Interface
+            - "5001:5001"  # Actuator API
+            - "5002:5002"  # Sensor API
         volumes:
-            - ./components:/usr/src/app
+            - ./components:/components/components_startup.sh
         networks:
             - scadalts_network
 
